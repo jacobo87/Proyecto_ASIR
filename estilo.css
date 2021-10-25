@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    color: black;
+    background-color: #FFFFFF;;
+}
+
+header{
+    background-color: #313A5A;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.logo{
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 40px;
+}
+
+.main-nav-mid{
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 62px;
+    z-index: 2;
+}
+
+.main-nav-end{
+    position: absolute;
+    margin-top: 62px;
+    right: 10%;
+    z-index: 2;
+}
+
+.row ul{
+    list-style: none;
+}
+
+.row li{
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.row li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 85%;
+    font-family: Rubik;
+    padding: 5px 5px;
+
+}
+
+.main-content h1{
+    position: absolute;
+    font-family: 'Rubik';
+    font-weight: bold;
+    width: 180px;
+    line-height: 57px;
+    font-size: 240%;
+    top: 40%;
+    left: 12%;
+    z-index: 2;
+    /* transform: translate(-300%,-50%); */
+}
+
+.yellowcolor{
+    color: #FFC84A;;
+}
+
+.main-content p{
+    position: absolute;
+    font-family: 'Open Sans';
+    width: 480px;
+    line-height: 34px;
+    top: 63%;
+    left: 12%;
+    z-index: 2;
+    /* transform: translate(-300%,-50%); */
+}
+
+.bgimg{
+    position: absolute;
+    top: 2%;
+    height: 100vh;
+    width: auto;
+    left: 100%;
+    transform: translate(-100%,0%);
+    z-index: 0;
+}
+
+.row li a:hover{
+    background: #FFC84A;
+    border-radius: 5px 0px;
+    color: black;
+}
+
+@media only screen and (max-width: 1080px){
+    /* first page */
+    body{
+        font-size: 19px;
+    }
+    .row li{
+        padding: 0px 15px;
+    }
+    .main-nav-mid{
+        left: 8%;
+    }
+    .bgimg{
+        height: 100vh;
+        opacity: 80%;
+    }
+    .main-content h1{
+        left: 6%;
+    }
+    .main-content p{
+        width: 380px;
+        left: 6%;
+    }
+}
+
+@media only screen and (max-width:989px){
+    /* first page */
+    .main-nav-mid{
+        top: 8%;
+        left: 25%;
+        width: fit-content;
+        transform: translate(-50%,-10%);
+    }
+    .row li{
+        padding: 0px 10px;
+    }
+    .logo{
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+/* Features */
+.Features{
+    position: absolute;
+    max-width: 1360px;
+    z-index: 2;
+    background-color: #f5f1f1;
+    color: black;
+    margin: 0 5%;
+    top: 95%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 34px rgba(210, 210, 210, 0.5);
+}
+
+
+.Features table{
+
+    padding: 8% 6%;
+    align-items: center;
+    line-height: 32px;
+    font-family: Rubik;
+    
+}
+
+.Features td{
+    padding: 2% 3%;
+    width: 450px;
+    
+}
+
+.tablePara{
+    
+    vertical-align: top;
+    color: #5B6C94;
+    
+}
+
+.tablePara td{
+    padding: 0;
+    padding-left: 3%;
+    font-size: 80%;
+}
+
+.tableLine{
+    height: 2px;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    
+}
+
+.tableHeading{
+    font-size: 90%;
+    font-weight: 500;
+    color: #031D5B;
+}
+
+.tableImg hr{
+    position: absolute;
+    background: #1FDB84;
+    mix-blend-mode: normal;
+    opacity: 20.1%;
+    border-radius: 6px;
+    height: 65px;
+    width: 67px;
+    z-index: -1;
+}
+
+.tableImg img{
+    padding-top: 5%;
+    padding-left: 4.2%;
+    /* height: 6.5vh;
+    width: auto; */
+}
+
+hr{
+    height: 5.5px;
+    width: 40%;
+    border: none;
+    background: #FFC84A;
+}
+
+.Mainrow-2{
+    padding-top: 0;
+}
+
+/* page 3 */
+.page3 table{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    padding: 80px 0;
+    line-height: 30px;
+    font-family: Rubik;
+    
+}
+
+.page3Table1{
+    position: absolute;
+    top: 245%;
+    z-index: 3;
+    left: 4%;
+    width: 25%;    
+}
+
+.page3 td{
+    text-align: center;
+    padding: 2% 3%;
+}
+
+.page3Table2{
+    position: absolute;
+    top: 240%;
+    left: 49%;
+    transform: translate(-45%);
+    width: 30%;
+}
+
+.page3Table3{
+    position: absolute;
+    top: 245%;
+    right: 3%;
+    width: 25%;
+}
+
+.page3TableHeading{
+    font-size: 120%;
+}
+
+.page3TablePara{
+    font-size: 80%;
+    font-weight: 300;
+}
+
+/* pricing plan */
+
+.pricing{
+    position: absolute;
+    top: 330%;
+    font-family: Rubik;
+}
+
+.pricing p{
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    font-size: 200%;
+    font-weight: 700;
+    line-height: 64px;
+    color: #32325C;
+    padding-bottom: 20px;
+}
+
+.pricingPanal{
+    width: 100vw;
+    text-align: center;
+}
+
+.pricingPanal li{
+    display: inline-block;
+    padding: 20px;
+    
+    border-radius: 5px 0px 0px 5px;
+}
+
+.pricingPanal li a{
+    text-decoration: none;
+    font-size: 80%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #2F3A5B;
+}
+
+.pricingPanal li:hover{
+    background: #F1FFF8;
+    border: 1px solid #AEFDD9;
+    border-radius: 5px;
+}
+
+.pricing table{
+    margin-top: 40px;
+    padding: 2% 0;
+    margin-bottom: 20px;
+}
+
+.plan1{
+    position: absolute;
+    width: 19vw;
+    left: 20%;
+    
+}
+
+.plan2{
+    position: absolute;
+    width: 19vw;
+    left: 40%;
+
+}
+
+.plan3{
+    position: absolute;
+    width: 19vw;
+    left: 60%;
+}
+
+.planHeading{
+    padding: 30px 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.266667px;
+    color: #32325C;
+}
+
+.planRate{
+    padding-top: 30px;
+    font-size: 72px;
+    line-height: 64px;
+    text-align: center;
+    color: #1FDB84;
+}
+
+.planDetails{
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.177778px;
+    color: #5B6C94;
+    list-style: none;
+    
+}
+
+td.planDetails {
+    padding-bottom: 60px;
+    padding-top: 10px;
+}
+
+.planDetails li{
+    padding-top: 15px;
+}
+
+.pricing table:hover{
+    background: #FFFFFF;
+    border-top: 2px solid #0A8AFF;
+    box-shadow: 0px 7px 24px rgba(83, 83, 83, 0.1);
+}
+
+.pricing button{
+    background-color: #FFC84A;
+    border: none;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 5px 0px;
+    font-weight: bold;
+    font-size: 80%;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.pricing td{
+    text-align: center;
+}
+
+/* Clients */
+
+.Clients{
+    position: absolute;
+    top: 440%;
+}
+
+.Clients h1{
+    margin-top: 250px;
+    width: 100vw;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 140%;
+    line-height: 33px;
+    letter-spacing: 1px;
+    color: #031D5B;
+}
+
+.Clients img{
+    width: 70vw;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    margin-left: 16%;
+}
+
+/* Get In Touch */
+
+.GinT{
+    position: absolute;
+    top: 520%;
+}
+
+.GinTMainHeading{
+    font-family: Rubik;
+    width: 400px;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 65px;
+    color: #031D5B;
+    margin-top: 150px;
+    margin-left: 50%;
+
+}
+
+.GinTForm{
+    position: absolute;
+    /* width: 100vw; */
+    left: 20%;
+    top: 120%;
+    transform: translate(80%);
+    z-index: 5;
+    background: #ffffff;
+}
+
+.GinT form{
+    width: 35vw;
+    height: auto;
+    box-shadow: 0px 0px 20px rgba(29, 17, 86, 0.115517);
+    border-radius: 8px;
+    padding-bottom: 15px;
+}
+
+form h1{
+    margin-top:0px;
+    margin-right: 0px;
+    border-radius: 8px;
+    margin: 0 0 40px 40px;
+    padding-top: 70px;
+    font-family: 'Open Sans';
+    line-height: 60px;
+    font-weight: normal;
+    letter-spacing: 0.571429px;
+    font-size: 200%;
+    color: #54565A;
+}
+
+.GinT input{
+    width: calc(100% - 80px);
+    margin: 10px 40px;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    border: 1px solid #0D325D;
+    box-sizing: border-box;
+    border-radius: 4px;
+    vertical-align: top;
+    
+    
+}
+
+.GinTInput3{
+    height: 200px;
+    padding-left: 10px;
+    padding-bottom: 170px;
+}
+
+.GinTInput1, .GinTInput2{
+    height: 50px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.GinT button{
+    background: linear-gradient(171.03deg, #1B3BD8 -82.64%, #176CE0 6.9%, #0B92E7 57.29%, #0BB6EB 120.27%, #00E0F2 201.85%);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 35px;
+    font-size: 70%;
+    left: 50%;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    display: block;
+    margin: auto;
+}
+
+.purpulbg{
+    position: absolute;
+    width: 50vw;
+    height: 80vw;
+    left: 110%;
+    transform: translate(50%);
+    background: #313A5A;
+}
