@@ -6,7 +6,7 @@ El proyecto que quiero presentar se enfoca en una **Web de soporte Helpdesk**. M
 
 Se emplearán contenedores [Docker](https://www.docker.com/) para levantar servicios como la [Pila LAMP](https://es.wikipedia.org/wiki/LAMP), un [balanceador de carga](https://es.wikipedia.org/wiki/Equilibrador_de_carga) y desarrollar la web empleando [HTML](https://developer.mozilla.org/es/docs/Web/HTML), [PHP](https://www.php.net/), [CSS](https://developer.mozilla.org/es/docs/Web/CSS)...
 
-#### PILA LAMP
+## PILA LAMP
 [LAMP](https://es.wikipedia.org/wiki/LAMP) es un acrónimo utilizado para describir los sistemas de infraestructura de Internet utilizando las siguientes herramientas:
 
 ![](https://lh4.googleusercontent.com/wmCuTDpkpnkjtu8_EtTcK3usdu5NcQyHkphLmApGya_j3ulA8OGTKAnrIrjVrt7gh-nwF23GYXDFE9AwdEIw8OwkuOHz9Uq_y8XpzFctBODDl23cZQsDL0-Cw267y6xovLe8nwnk)
