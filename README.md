@@ -1,19 +1,19 @@
 <a name="top"></a>
 # Proyecto Integrado ASIR
->Jacobo Azmani 
->IES Celia Viñas (Almería) - Curso 2020/2021   
->Ciclo: CFGS Administración de Sistemas Informáticos en Red 
-
-### Objetivos
-El proyecto que quiero presentar se enfoca en una **Web de soporte Helpdesk**. Mi objetivo es aplicar los conocimientos adquiridos a lo largo del curso implantando las diferentes infraestructuras necesarias para levantar los servicios necesarios para una web de soporte técnico . Los clientes, previo registro, podrán hacer uso de la web para intercambio de contenido.
-
-Se emplearán contenedores [Docker](https://www.docker.com/) para levantar servicios como la [Pila LAMP](https://es.wikipedia.org/wiki/LAMP), un [balanceador de carga](https://es.wikipedia.org/wiki/Equilibrador_de_carga) y desarrollar la web empleando [HTML](https://developer.mozilla.org/es/docs/Web/HTML), [PHP](https://www.php.net/), [CSS](https://developer.mozilla.org/es/docs/Web/CSS)...
+> Jacobo Azmani  
+> IES Celia Viñas (Almería) - Curso 2020/2021    
+> Ciclo: CFGS Administración de Sistemas Informáticos en Red  
 
 ## Índice de contenidos
 * [PILA LAMP](#item1)
 * [Docker](#item2)
 * [Docker-Compose](#item3)
 * [Herramientas](#item4)
+
+### Objetivos
+El proyecto que quiero presentar se enfoca en una **Web de soporte Helpdesk**. Mi objetivo es aplicar los conocimientos adquiridos a lo largo del curso implantando las diferentes infraestructuras necesarias para levantar los servicios necesarios para una web de soporte técnico . Los clientes, previo registro, podrán hacer uso de la web para intercambio de contenido.
+
+Se emplearán contenedores [Docker](https://www.docker.com/) para levantar servicios como la [Pila LAMP](https://es.wikipedia.org/wiki/LAMP), un [balanceador de carga](https://es.wikipedia.org/wiki/Equilibrador_de_carga) y desarrollar la web empleando [HTML](https://developer.mozilla.org/es/docs/Web/HTML), [PHP](https://www.php.net/), [CSS](https://developer.mozilla.org/es/docs/Web/CSS)...
 
 <a name="item1"></a>
 ### PILA LAMP
