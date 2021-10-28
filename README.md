@@ -1,11 +1,21 @@
+<a name="top"></a>
 # Proyecto Integrado ASIR
-> Jacobo Azmani
+>Jacobo Azmani 
+>IES Celia Viñas (Almería) - Curso 2020/2021   
+>Ciclo: CFGS Administración de Sistemas Informáticos en Red 
 
 ### Objetivos
 El proyecto que quiero presentar se enfoca en una **Web de soporte Helpdesk**. Mi objetivo es aplicar los conocimientos adquiridos a lo largo del curso implantando las diferentes infraestructuras necesarias para levantar los servicios necesarios para una web de soporte técnico . Los clientes, previo registro, podrán hacer uso de la web para intercambio de contenido.
 
 Se emplearán contenedores [Docker](https://www.docker.com/) para levantar servicios como la [Pila LAMP](https://es.wikipedia.org/wiki/LAMP), un [balanceador de carga](https://es.wikipedia.org/wiki/Equilibrador_de_carga) y desarrollar la web empleando [HTML](https://developer.mozilla.org/es/docs/Web/HTML), [PHP](https://www.php.net/), [CSS](https://developer.mozilla.org/es/docs/Web/CSS)...
 
+## Índice de contenidos
+* [PILA LAMP](#item1)
+* [Docker](#item2)
+* [Docker-Compose](#item3)
+* [Herramientas](#item4)
+
+<a name="item1"></a>
 ### PILA LAMP
 [LAMP](https://es.wikipedia.org/wiki/LAMP) es un acrónimo utilizado para describir los sistemas de infraestructura de Internet utilizando las siguientes herramientas:
 
@@ -18,16 +28,19 @@ Se emplearán contenedores [Docker](https://www.docker.com/) para levantar servi
 
 La combinación de estas tecnologías se utiliza principalmente para definir la estructura básica del servidor web.
 
+<a name="item2"></a>
 ### Docker
 
 Son contenedores ligeros y portables para las aplicaciones software que puedan ejecutarse en cualquier máquina con [Docker](https://www.docker.com/) instalado, independientemente del sistema operativo que la máquina tenga por debajo.
 
+<a name="item3"></a>
 ### Docker-Compose
 
 [Docker Compose](https://docs.docker.com/compose/) es una herramienta que permite simplificar el uso de [Docker](https://www.docker.com/). A partir de archivos [YAML](https://es.wikipedia.org/wiki/YAML) es más sencillo crear contenedores, conectarlos, habilitar puertos, volúmenes.
 
 Con Docker-Compose podemos crear diferentes contenedores y al mismo tiempo, en cada contenedor, diferentes servicios, unirlos a un volúmen común, iniciarlos y apagarlos.
 
+<a name="item4"></a>
 #### Herramientas usadas
 
 Para la puesta en marcha usaremos:
@@ -40,4 +53,6 @@ Para la puesta en marcha usaremos:
 - [Balsamiq](https://balsamiq.com/) para la creación del [wireframe](https://es.wikipedia.org/wiki/Website_wireframe) del sitio.
 
 ## REFERENCIAS
-- 
+- [Jacobo Azmani Github](https://github.com/jacobo87)
+
+[Subir](#top)
