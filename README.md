@@ -54,6 +54,6 @@ Para la puesta en marcha usaremos:
 
 ## REFERENCIAS
 - [José Juan Sanchez](https://github.com/josejuansanchez/iaw-practica-lamp-docker)
-- [Jacobo Azmani Github](https://github.com/jacobo87)
+- [Jacobo Azmani](https://github.com/jacobo87)
 
 [Subir](#top)

@@ -1,3 +1,8 @@
+<?php
+// Incluimos el archivo de conexión de la base de datos
+include_once("config.php");
+
+?>
 <!DOCTYPE html>
 <html>
 <head lang="es">
@@ -25,11 +30,11 @@
             <div class="container-fluid">
                 <form class="sign-box">
                     <div class="sign-avatar">
-                        <img src="public/img/avatar-sign.png" alt="">
+                        <img src="public/img/avatar-sign.png" alt="Imagen de perfil">
                     </div>
                     <header class="sign-title">Acceso</header>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="E-Mail o Telefono"/>
+                        <input type="text" class="form-control" placeholder="E-Mail"/>
                     </div>
                     <div class="form-group">
                         <input type="password" class="form-control" placeholder="Contraseña"/>
