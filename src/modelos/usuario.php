@@ -25,8 +25,14 @@
                     $stmt->execute();
                     // Lo guardamos en una variable resultado
                     $resultado = $stmt->fetch();
-                    if(){
-
+                    // Preguntamos si el resultado es un array y si es mayor que 0
+                    if(is_array($resultado) and count($resultado)>0){
+                        // Creamos variables de sesión
+                        $_SESSION["id"]=$resultado["id"];
+                        $_SESSION["nombre"]=$resultado["nombre"];
+                        $_SESSION["apellido"]=$resultado["apellido"];
+                        // Si es correcto el resultado lo redirigimos a la pagina home
+                        header("Location:". conectar::ruta(). "vistas/home/index.php");
                     }else{
                         // Si no devuelve datos, los introducidos son incorrectos
                         // volvemos a mostrar mensaje de error
