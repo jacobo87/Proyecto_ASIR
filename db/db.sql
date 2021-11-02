@@ -13,14 +13,14 @@ CREATE TABLE usuarios (
   fecha_modificacion DATETIME NOT NULL,
   fecha_eliminacion DATETIME NOT NULL,
   estado INTEGER(11) NOT NULL
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 # CATEGORÍA (id, nombre, estado)
 CREATE TABLE categoria (
 	id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(150) NOT NULL,
   estado INTEGER(11) NOT NULL
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 # CASO (id, usuario_id, categoria_id, título, descripción, estado)
 CREATE TABLE caso (
@@ -32,4 +32,8 @@ CREATE TABLE caso (
   estado INTEGER(11) NOT NULL,
   FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
   FOREIGN KEY (categoria_id) REFERENCES categoria(id)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE USER IF NOT EXISTS 'user'@'%';
+SET PASSWORD FOR 'user'@'%' = 'password';
+GRANT ALL PRIVILEGES ON db.* TO 'user'@'%';

@@ -53,6 +53,7 @@ Para la puesta en marcha usaremos:
 - [Balsamiq](https://balsamiq.com/) para la creación del [wireframe](https://es.wikipedia.org/wiki/Website_wireframe) del sitio.
 
 ## REFERENCIAS
+- [José Juan Sanchez](https://github.com/josejuansanchez/iaw-practica-lamp-docker)
 - [Jacobo Azmani Github](https://github.com/jacobo87)
 
 [Subir](#top)
