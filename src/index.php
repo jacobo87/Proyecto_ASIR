@@ -38,6 +38,38 @@
                         <img src="public/img/avatar-sign.png" alt="Imagen de perfil">
                     </div>
                     <header class="sign-title">Acceso</header>
+
+                    <!-- Agregamos mensajes de error -->
+                    <?php
+                    if(isset($_GET['m'])){
+                        switch($_GET['m']){
+                            case "1";
+                            ?>
+                                <div class="alert alert-warning alert-icon alert-close alert-dismissible fade in" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                    <i class="font-icon font-icon-warning"></i>
+                                    El usuario y/o la contraseña son incorrectos.
+                                </div>
+                                <?php
+                            break;
+
+                            case "2";
+                            ?>
+                                <div class="alert alert-warning alert-icon alert-close alert-dismissible fade in" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                    <i class="font-icon font-icon-warning"></i>
+                                    Los campos están vacios.
+                                </div> 
+                            <?php
+                        break;
+                        }
+                    }
+                    ?>
+
                     <div class="form-group">
                         <input type="text" id="usuario_correo" name="usuario_correo" class="form-control" placeholder="E-Mail"/>
                     </div>
