@@ -34,6 +34,6 @@ CREATE TABLE caso (
   FOREIGN KEY (categoria_id) REFERENCES categoria(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE USER IF NOT EXISTS 'user'@'%';
-SET PASSWORD FOR 'user'@'%' = 'password';
-GRANT ALL PRIVILEGES ON db.* TO 'user'@'%';
+# CREATE USER IF NOT EXISTS 'user'@'%';
+# SET PASSWORD FOR 'user'@'%' = 'password';
+# GRANT ALL PRIVILEGES ON db.* TO 'user'@'%';

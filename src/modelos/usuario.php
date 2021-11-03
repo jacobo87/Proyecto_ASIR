@@ -12,11 +12,11 @@
                 $email = $_POST["email"];
                 $contrasenya = $_POST["contrasenya"];
                 // Creamos mensaje de error si los campos están vacíos
-                if(empty($correo) and empty($contrasenya)){
+                if(empty($email) and empty($contrasenya)){
                     // Mandamos de nuevo a index.php con un mensaje 2 indicando que hay un error
                     header("Location:". conectar::ruta(). "index.php?m=2");
                 }else{
-                    // Si se conecta, llamamos a
+                    // Si se conecta, llamamos a la sentencia sql
                     $sql = "SELECT * FROM `usuarios` WHERE email=? and contrasenya=? and estado=1";
                     $stmt=$conectar->prepare($sql);
                     $stmt->bindValue(1, $email);
@@ -42,7 +42,5 @@
                 }
             }
         }
-
     }
-
 ?>
