@@ -9,7 +9,7 @@
         protected function conexion(){
             try {
                 // Selecionamos la variable portegida y añadimos un TRY_CAST
-                $conectar = $this->DB_HOST = new PDO("mysql:local=localhost;dbname=db", "user", "password");
+                $conectar = $this->DB_HOST = new PDO("mysql:local=localhost;dbname=db", "root", "");
                 return $conectar;
             } catch (Exception $e) {
                 // Si el resultado es NULL, mostramos mensaje de error
@@ -24,7 +24,7 @@
 
         // Validamos la ruta de nuestro proyecto
         public function ruta(){
-            return "http://localhost:80";
+            return "http://localhost/proyectoasir/";
         }
     }
 

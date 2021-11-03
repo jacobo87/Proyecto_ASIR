@@ -9,17 +9,17 @@
             // Preguntamos con POST para que recoja los parametros enviados desde login
             if(isset($_POST["enviar"])){
                 // Ponemos los login necesarios, correo y contraseña
-                $correo = $_POST["usuario_correo"];
-                $contrasenya = $_POST["usuario_pass"];
+                $email = $_POST["email"];
+                $contrasenya = $_POST["contrasenya"];
                 // Creamos mensaje de error si los campos están vacíos
                 if(empty($correo) and empty($contrasenya)){
                     // Mandamos de nuevo a index.php con un mensaje 2 indicando que hay un error
                     header("Location:". conectar::ruta(). "index.php?m=2");
                 }else{
                     // Si se conecta, llamamos a
-                    $sql = "SELECT * FROM `USUARIOS` WHERE usuario_correo=? and usuario_pass=? and estado=1";
+                    $sql = "SELECT * FROM `usuarios` WHERE email=? and contrasenya=? and estado=1";
                     $stmt=$conectar->prepare($sql);
-                    $stmt->bindValue(1, $correo);
+                    $stmt->bindValue(1, $email);
                     $stmt->bindValue(2, $contrasenya);
                     // ejecutamos lo indicado
                     $stmt->execute();

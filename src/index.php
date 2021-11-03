@@ -1,7 +1,12 @@
 <?php
-// Incluimos el archivo de conexión de la base de datos
-include_once("config.php");
-
+// Requerimos el archivo de conexión de la base de datos
+    require_once("configuracion/conexion.php");
+    // Comprobamos si el envio es = a si entra en usuario.php
+    if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
+        require_once("modelos/usuario.php");
+        $usuario = New usuario();
+        $usuario->login();
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,28 +33,24 @@ include_once("config.php");
     <div class="page-center">
         <div class="page-center-in">
             <div class="container-fluid">
-                <form class="sign-box">
+                <form class="sign-box" action="" method="post" id="login_formulario">
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="Imagen de perfil">
                     </div>
                     <header class="sign-title">Acceso</header>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="E-Mail"/>
+                        <input type="text" id="usuario_correo" name="usuario_correo" class="form-control" placeholder="E-Mail"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Contraseña"/>
+                        <input type="password" id="usuario_pass" name="usuario_pass" class="form-control" placeholder="Contraseña"/>
                     </div>
                     <div class="form-group">
-                        <div class="checkbox float-left">
-                            <input type="checkbox" id="signed-in"/>
-                            <label for="signed-in">Mantenerme conectado</label>
-                        </div>
                         <div class="float-right reset">
                             <a href="reset-password.html">Resetear contraseña</a>
                         </div>
                     </div>
+                    <input type="hidden" name="enviar" class="form-control" value="si">
                     <button type="submit" class="btn btn-rounded">Acceder</button>
-                    <p class="sign-note">¿Eres nuevo? <a href="sign-up.html">Registrate</a></p>
                 </form>
             </div>
         </div>

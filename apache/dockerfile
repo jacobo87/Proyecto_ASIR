@@ -16,7 +16,7 @@ RUN apt install git -y \
     && cd /tmp \
     && git clone https://github.com/jacobo87/Proyecto_ASIR\
     && mv /tmp/Proyecto_ASIR/src/* /var/www/html/ \
-    && sed -i 's/localhost/mysql/' /var/www/html/src/configuracion/config.php \
+    && sed -i 's/localhost/mysql/' /var/www/html/src/configuracion/conexion.php \
     && rm /var/www/html/index.html
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"] 
