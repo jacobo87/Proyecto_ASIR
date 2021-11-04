@@ -1,33 +1,35 @@
 <?php
 // Requerimos el archivo de conexión de la base de datos
-    require_once("configuracion/conexion.php");
-    // Comprobamos si el envio es = a si entra en usuario.php
-    if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
-        require_once("modelos/usuario.php");
-        $usuario = New usuario();
-        $usuario->login();
-    }
+require_once("configuracion/conexion.php");
+// Comprobamos si el envio es = a si entra en usuario.php
+if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
+    require_once("modelos/usuario.php");
+    $usuario = new usuario();
+    $usuario->login();
+}
 ?>
 <!DOCTYPE html>
 <html>
+
 <head lang="es">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Jacobo Azmani - Acceso</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jacobo Azmani - Acceso</title>
 
-	<link href="public/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
-	<link href="public/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
-	<link href="public/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
-	<link href="public/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
-	<link href="public/img/favicon.png" rel="icon" type="image/png">
-	<link href="public/img/favicon.ico" rel="shortcut icon">
+    <link href="public/img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+    <link href="public/img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
+    <link href="public/img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
+    <link href="public/img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
+    <link href="public/img/favicon.png" rel="icon" type="image/png">
+    <link href="public/img/favicon.ico" rel="shortcut icon">
 
-<link rel="stylesheet" href="public/css/separate/pages/login.min.css">
+    <link rel="stylesheet" href="public/css/separate/pages/login.min.css">
     <link rel="stylesheet" href="public/css/lib/font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="public/css/lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/main.css">
 </head>
+
 <body>
 
     <div class="page-center">
@@ -41,10 +43,10 @@
 
                     <!-- Agregamos mensajes de error -->
                     <?php
-                    if(isset($_GET['m'])){
-                        switch($_GET['m']){
+                    if (isset($_GET['m'])) {
+                        switch ($_GET['m']) {
                             case "1";
-                            ?>
+                    ?>
                                 <div class="alert alert-warning alert-icon alert-close alert-dismissible fade in" role="alert">
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">×</span>
@@ -52,8 +54,8 @@
                                     <i class="font-icon font-icon-warning"></i>
                                     El usuario y/o la contraseña son incorrectos.
                                 </div>
-                                <?php
-                            break;
+                            <?php
+                                break;
 
                             case "2";
                             ?>
@@ -63,18 +65,18 @@
                                     </button>
                                     <i class="font-icon font-icon-warning"></i>
                                     Los campos están vacios.
-                                </div> 
-                            <?php
-                        break;
+                                </div>
+                    <?php
+                                break;
                         }
                     }
                     ?>
 
                     <div class="form-group">
-                        <input type="text" id="usuario_correo" name="usuario_correo" class="form-control" placeholder="E-Mail"/>
+                        <input type="text" id="usuario_correo" name="usuario_correo" class="form-control" placeholder="E-Mail" />
                     </div>
                     <div class="form-group">
-                        <input type="password" id="usuario_pass" name="usuario_pass" class="form-control" placeholder="Contraseña"/>
+                        <input type="password" id="usuario_pass" name="usuario_pass" class="form-control" placeholder="Contraseña" />
                     </div>
                     <div class="form-group">
                         <div class="float-right reset">
@@ -86,13 +88,14 @@
                 </form>
             </div>
         </div>
-    </div><!--.page-center-->
+    </div>
+    <!--.page-center-->
 
 
-<script src="public/js/lib/jquery/jquery.min.js"></script>
-<script src="public/js/lib/tether/tether.min.js"></script>
-<script src="public/js/lib/bootstrap/bootstrap.min.js"></script>
-<script src="public/js/plugins.js"></script>
+    <script src="public/js/lib/jquery/jquery.min.js"></script>
+    <script src="public/js/lib/tether/tether.min.js"></script>
+    <script src="public/js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="public/js/plugins.js"></script>
     <script type="text/javascript" src="public/js/lib/match-height/jquery.matchHeight.min.js"></script>
     <script>
         $(function() {
@@ -100,16 +103,19 @@
                 target: $('html')
             });
 
-            $(window).resize(function(){
-                setTimeout(function(){
-                    $('.page-center').matchHeight({ remove: true });
+            $(window).resize(function() {
+                setTimeout(function() {
+                    $('.page-center').matchHeight({
+                        remove: true
+                    });
                     $('.page-center').matchHeight({
                         target: $('html')
                     });
-                },100);
+                }, 100);
             });
         });
     </script>
-<script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

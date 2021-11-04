@@ -27,5 +27,3 @@
             return "http://localhost/proyectoasir/";
         }
     }
-
-?>
