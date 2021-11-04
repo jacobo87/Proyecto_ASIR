@@ -2,9 +2,11 @@
 // Requerimos el archivo de conexión de la base de datos
 require_once("configuracion/conexion.php");
 // Comprobamos si el envio es = a si entra en usuario.php
-if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
+if (isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
     require_once("modelos/usuario.php");
     $usuario = new usuario();
+
+
     $usuario->login();
 }
 ?>
@@ -43,8 +45,8 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
 
                     <!-- Agregamos mensajes de error -->
                     <?php
-                    if (isset($_GET['m'])) {
-                        switch ($_GET['m']) {
+                    if (isset($_GET['m'])){
+                        switch ($_GET['m']){
                             case "1";
                     ?>
                                 <div class="alert alert-warning alert-icon alert-close alert-dismissible fade in" role="alert">
@@ -73,10 +75,10 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                     ?>
 
                     <div class="form-group">
-                        <input type="text" id="usuario_correo" name="usuario_correo" class="form-control" placeholder="E-Mail" />
+                        <input type="text" id="email" name="email" class="form-control" placeholder="E-Mail" />
                     </div>
                     <div class="form-group">
-                        <input type="password" id="usuario_pass" name="usuario_pass" class="form-control" placeholder="Contraseña" />
+                        <input type="password" id="contrasenya" name="contrasenya" class="form-control" placeholder="Contraseña" />
                     </div>
                     <div class="form-group">
                         <div class="float-right reset">
