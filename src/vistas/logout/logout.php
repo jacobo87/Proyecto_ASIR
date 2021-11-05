@@ -3,6 +3,6 @@
     require_once("../../configuracion/conexion.php");
     // Finalizamos la sesión
     session_destroy();
-    // Redirigimos de nuevo a nuestro login
-    header("Location:".conectar::ruta()."../../index.php");
+    // Redirigimos de nuevo a nuestro login del sitio
+    header("Location:".conectar::ruta()."index.php");
     exit();
