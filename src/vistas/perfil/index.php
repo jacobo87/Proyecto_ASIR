@@ -7,7 +7,7 @@ if (isset($_SESSION["id"])) {
     <html>
     <!-- Llamamos a nuestro Head -->
     <?php require_once("../mainhead/head.php"); ?>
-    <title>Jacobo Azmani - Home</title>
+    <title>Jacobo Azmani - Perfil de Usuario</title>
     </head>
 
     <body class="with-side-menu">

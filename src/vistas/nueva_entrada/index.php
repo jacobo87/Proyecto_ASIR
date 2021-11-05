@@ -39,10 +39,7 @@ if (isset($_SESSION["id"])) {
                     <!-- Insertamos formulario -->
                     <div class="box-typical box-typical-padding">
                         <p>
-                            ¿Desea crear un nuevo caso?
-                        </p>
-                        <p>
-                            Complete el formulario, por favor:
+                            Complete el siguiente formulario:
                         </p>
                         </br>
                         <h5 class="m-t-lg with-border">Información</h5>
