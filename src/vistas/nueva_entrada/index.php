@@ -45,23 +45,30 @@ if (isset($_SESSION["id"])) {
                         <h5 class="m-t-lg with-border">Información</h5>
 
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <fieldset class="form-group">
                                     <label class="form-label semibold" for="exampleInput">Categoría</label>
-                                    <input type="text" class="form-control" id="exampleInput" placeholder="First Name">
-                                    <small class="text-muted">We'll never share your email with anyone else.</small>
+                                    <select id="" class="form-control">
+                                        <option>Hardware</option>
+                                        <option>Software</option>
+                                        <option>Redes</option>
+                                        <option>Sistema Operativo</option>
+                                        <option>Otros</option>
+                                    </select>
                                 </fieldset>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <fieldset class="form-group">
-                                    <label class="form-label" for="exampleInputEmail1">Título</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" value="mail@mail.com">
+                                    <label class="form-label semibold" for="exampleInputEmail1">Título</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Escriba el título">
                                 </fieldset>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-12">
                                 <fieldset class="form-group">
-                                    <label class="form-label" for="exampleInputPassword1">Descripción</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <label class="form-label semibold" for="exampleInputPassword1">Descripción</label>
+                                    <div class="summernote-them-1">
+                                        <textarea id="descripcion_caso" class="summernote" name=""></textarea>
+                            </div>
                                 </fieldset>
                             </div>
                         </div>
