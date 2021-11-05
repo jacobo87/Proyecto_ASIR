@@ -42,64 +42,32 @@ if (isset($_SESSION["id"])) {
                             ¿Desea crear un nuevo caso?
                         </p>
                         <p>
-                            Complete el formulario, por favor.
+                            Complete el formulario, por favor:
                         </p>
                         </br>
-                        <form>
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label">Text</label>
-                                <div class="col-sm-10">
-                                    <p class="form-control-static"><input type="text" class="form-control" id="inputPassword" placeholder="Text"></p>
-                                </div>
+                        <h5 class="m-t-lg with-border">Información</h5>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <fieldset class="form-group">
+                                    <label class="form-label semibold" for="exampleInput">Categoría</label>
+                                    <input type="text" class="form-control" id="exampleInput" placeholder="First Name">
+                                    <small class="text-muted">We'll never share your email with anyone else.</small>
+                                </fieldset>
                             </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label">Text Disabled</label>
-                                <div class="col-sm-10">
-                                    <p class="form-control-static"><input type="text" disabled class="form-control" id="inputPassword" placeholder="Text Disabled"></p>
-                                </div>
+                            <div class="col-lg-4">
+                                <fieldset class="form-group">
+                                    <label class="form-label" for="exampleInputEmail1">Título</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" value="mail@mail.com">
+                                </fieldset>
                             </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 form-control-label">Text Readonly</label>
-                                <div class="col-sm-10">
-                                    <p class="form-control-static"><input type="text" readonly class="form-control" id="inputPassword" placeholder="Text Readonly"></p>
-                                </div>
+                            <div class="col-lg-4">
+                                <fieldset class="form-group">
+                                    <label class="form-label" for="exampleInputPassword1">Descripción</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </fieldset>
                             </div>
-                            <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-2 form-control-label">Password</label>
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="exampleSelect" class="col-sm-2 form-control-label">Select</label>
-                                <div class="col-sm-10">
-                                    <select id="exampleSelect" class="form-control">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="exampleSelect2" class="col-sm-2 form-control-label">Multiple select</label>
-                                <div class="col-sm-10">
-                                    <select multiple class="form-control" id="exampleSelect2">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="exampleSelect" class="col-sm-2 form-control-label">Textarea</label>
-                                <div class="col-sm-10">
-                                    <textarea rows="4" class="form-control" placeholder="Textarea"></textarea>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </header>
             </div>
