@@ -2,7 +2,7 @@
     <div class="container-fluid">
 
         <a href="#" class="site-logo">
-            <img class="hidden-md-down" src="../../public/img/logo-2.png" alt="">
+            <img class="hidden-md-down" src="../../public/img/logo3.png" alt="Logo Jacobo">
             <img class="hidden-lg-up" src="../../public/img/logo-2-mob.png" alt="">
         </a>
 
@@ -37,12 +37,17 @@
 
                 <div class="mobile-menu-right-overlay"></div>
 
+                <!-- Escondemos el id en una variable oculta -->
+                <input type="hidden" id="usuario_id" value="<?php echo $_SESSION["id"] ?>">
+
                 <div class="dropdown dropdown-typical">
-                    <a class="dropdown-toggle" id="dd-header-marketing" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="font-icon font-icon-cogwheel"></span>
-                        <span class="lbl">Marketing automation</span>
+                    <a href="#" class="dropdown-yoggle no-arr">
+                        <span class="font-icon font-icon-user"></span>
+                        <!-- Añadimos en nombre y el apellido del usuario conectado -->
+                        <span class="lblcontactonomx"> <?php echo $_SESSION["nombre"] ?> <?php echo $_SESSION["apellido"] ?></span>
                     </a>
                 </div>
+            </div>
 
             </div>
             <!--.help-dropdown-->

@@ -22,6 +22,12 @@
                 </span>
             </a>
             </li>
+            <li class="blue-dirty">
+                <a href="..\..\index.php">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <span class="lbl">Cerrar Sesión</span>
+                </a>
+            </li>
         </ul>
     </nav>
     <!--.side-menu-->
