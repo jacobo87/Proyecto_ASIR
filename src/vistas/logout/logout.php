@@ -4,6 +4,6 @@
     // Finalizamos la sesión
     session_destroy();
     // Redirigimos de nuevo a nuestro login
-    header("Location:".conectar::ruta()."index.php");
+    header("Location:".conectar::ruta()."../../../index.php");
     exit();
 ?>
