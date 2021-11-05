@@ -7,7 +7,7 @@
                 </a>
             </li>
             <li class="magenta with-sub">
-                <a href="..\\">
+                <a href="..\nueva_entrada\">
                 <span>
                     <span class="glyphicon glyphicon-list-alt"></span>
                     <span class="lbl">Nuevo Caso</span>
@@ -15,7 +15,7 @@
             </a>
             </li>
             <li class="magenta with-sub">
-                <a href="..\\">
+                <a href="..\consultar_entrada\">
                 <span>
                     <span class="glyphicon glyphicon-list-alt"></span>
                     <span class="lbl">Consultar Caso</span>
