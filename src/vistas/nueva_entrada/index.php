@@ -47,7 +47,7 @@ if (isset($_SESSION["id"])) {
                         <div class="row">
                             <div class="col-lg-6">
                                 <fieldset class="form-group">
-                                    <label class="form-label semibold" for="exampleInput">Categoría</label>
+                                    <label class="form-label semibold" for="exampleInput">Seleccione una Categoría</label>
                                     <select id="" class="form-control">
                                         <option>Hardware</option>
                                         <option>Software</option>

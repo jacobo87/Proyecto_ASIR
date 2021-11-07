@@ -44,7 +44,7 @@
                     <a href="#" class="dropdown-yoggle no-arr">
                         <span class="font-icon font-icon-user"></span>
                         <!-- Añadimos en nombre y el apellido del usuario conectado -->
-                        <span class="lblcontactonomx"> <?php echo $_SESSION["nombre"] ?> <?php echo $_SESSION["apellido"] ?></span>
+                        <span class="lblcontactonomx"> <?php echo $_SESSION["nombre"] ?> <?php echo $_SESSION["apellido1"] ?></span> <?php echo $_SESSION["apellido2"] ?></span>
                     </a>
                 </div>
             </div>

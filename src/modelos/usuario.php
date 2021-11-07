@@ -30,7 +30,8 @@
                         // Creamos variables de sesión
                         $_SESSION["id"]=$resultado["id"];
                         $_SESSION["nombre"]=$resultado["nombre"];
-                        $_SESSION["apellido"]=$resultado["apellido"];
+                        $_SESSION["apellido1"]=$resultado["apellido1"];
+                        $_SESSION["apellido2"]=$resultado["apellido2"];
                         // Si es correcto el resultado lo redirigimos a la pagina home
                         header("Location:".conectar::ruta()."vistas/home/index.php");
                     }else{
