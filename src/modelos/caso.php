@@ -7,7 +7,7 @@
             // Enlazamos con nuestro set_names para usar utf8 
             parent::set_names();
             // Creamos la variable de la consulta 
-            $sql="INSERT INTO caso (id, usuario_id, categoria_id, titulo, descripcion, estado) VALUES (NULL,?,?,?,?,'1');";
+            $sql="INSERT INTO caso (id,usuario_id,categoria_id,titulo,descripcion,estado) VALUES (NULL,?,?,?,?,'1');";
             $sql=$conectar->prepare($sql);
             // Ponemos los parametros anteriores
             $sql->bindValue(1, $usuario_id);

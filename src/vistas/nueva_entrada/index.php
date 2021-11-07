@@ -47,29 +47,32 @@ if (isset($_SESSION["id"])) {
                         <div class="row">
                             <!-- Introducimos el formulario en form -->
                             <form method="post" id="caso_form">
+                                <!-- Introduciomos el id del usuario -->
+                                <input type="hidden" id="usuario_id" name="usuario_id" value="<?php echo $_SESSION["id"] ?>">
+
                                 <div class="col-lg-6">
                                     <fieldset class="form-group">
                                         <label class="form-label semibold" for="exampleInput">Seleccione una Categoría</label>
-                                        <select id="categoria" class="form-control">
+                                        <select id="categoria" name="categoria_id" class="form-control">
                                         </select>
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-6">
                                     <fieldset class="form-group">
-                                        <label class="form-label semibold" for="exampleInputEmail1">Título</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Escriba el título">
+                                        <label class="form-label semibold" for="titulo">Título</label>
+                                        <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Escriba el título">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
                                     <fieldset class="form-group">
                                         <label class="form-label semibold" for="exampleInputPassword1">Descripción</label>
                                         <div class="summernote-theme-3">
-                                            <textarea id="descripcion" class="summernote" name="name">Añada una descripción de su problema.</textarea>
+                                            <textarea id="descripcion" name="descripcion" class="summernote" name="name">Añada una descripción de su problema.</textarea>
                                         </div>
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12">
-                                    <button type="button" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+                                    <button type="submit" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
                                 </div>
                             </form>
                         </div>
@@ -86,6 +89,12 @@ if (isset($_SESSION["id"])) {
         <script type="text/javascript" src="home.js"></script>
         <!-- Añadimos el script que controla summernote -->
         <script>
+            function init() {
+                $("#caso_form").on("submit", function(e) {
+                    guardareditar(e);
+                });
+            }
+
             $(document).ready(function() {
                 $('.summernote').summernote({
                     height: 200
@@ -94,6 +103,25 @@ if (isset($_SESSION["id"])) {
                     $('#categoria').html(data);
                 });
             });
+
+            function guardareditar(e) {
+                // añadimos está función para que no salte varias veces
+                e.preventDefault();
+                // Declaranos la variable formData
+                var formData = new FormData($("caso_form")[0]);
+                $.ajax({
+                    url: "../../controller/caso.php?op=insertar",
+                    type: "POST",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(datos) {
+                        console.log(datos);
+                    }
+                });
+            }
+
+            init();
         </script>
     </body>
 
