@@ -86,7 +86,10 @@ if (isset($_SESSION["id"])) {
         <!-- Añadimos el script que controla summernote -->
         <script>
             $(document).ready(function() {
-                $('.summernote').summernote();
+                $('.summernote').summernote({
+                    /* Aumentamos el tamaño del cuadro  */
+                    height: 200
+                });
             });
         </script>
     </body>
