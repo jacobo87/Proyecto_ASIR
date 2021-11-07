@@ -51,6 +51,7 @@ Para la puesta en marcha usaremos:
 -   [Amazon Web Services](https://aws.amazon.com/es/) para el despliegue final del proyecto.
 -   [Visual Studio Code](https://code.visualstudio.com/) para desarrollo de código web con diferentes extensiones especializadas.
 - [Balsamiq](https://balsamiq.com/) para la creación del [wireframe](https://es.wikipedia.org/wiki/Website_wireframe) del sitio.
+- [Summernote](https://summernote.org/)
 
 ## REFERENCIAS
 - [José Juan Sanchez](https://github.com/josejuansanchez/iaw-practica-lamp-docker)
