@@ -71,6 +71,9 @@ if (isset($_SESSION["id"])) {
                                     </div>
                                 </fieldset>
                             </div>
+                            <div class="col-lg-12">
+                                <button type="button" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+                            </div>
                         </div>
                     </div>
                 </header>
