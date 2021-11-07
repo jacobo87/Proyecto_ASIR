@@ -30,7 +30,7 @@ if (isset($_SESSION["id"])) {
                             <div class="tbl-cell">
                                 <h3>Nuevo Caso</h3>
                                 <ol class="breadcrumb breadcrumb-simple">
-                                    <li><a href="#">Inicio</a></li>
+                                    <li><a href="../home/index.php">Inicio</a></li>
                                     <li class="active">Nuevo Caso</li>
                                 </ol>
                             </div>
@@ -66,9 +66,9 @@ if (isset($_SESSION["id"])) {
                             <div class="col-lg-12">
                                 <fieldset class="form-group">
                                     <label class="form-label semibold" for="exampleInputPassword1">Descripción</label>
-                                    <div class="summernote-them-1">
-                                        <textarea id="descripcion_caso" class="summernote" name=""></textarea>
-                            </div>
+                                    <div class="summernote-theme-3">
+                                        <textarea id="descripcion" class="summernote" name="name">Añada una descripción de su problema.</textarea>
+                                    </div>
                                 </fieldset>
                             </div>
                         </div>
@@ -83,6 +83,12 @@ if (isset($_SESSION["id"])) {
         <?php require_once("../mainjs/js.php"); ?>
         <!-- Añadimos el script que va a controlar la vista -->
         <script type="text/javascript" src="home.js"></script>
+        <!-- Añadimos el script que controla summernote -->
+        <script>
+            $(document).ready(function() {
+                $('.summernote').summernote();
+            });
+        </script>
     </body>
 
     </html>

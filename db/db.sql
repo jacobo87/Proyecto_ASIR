@@ -44,6 +44,9 @@ INSERT INTO usuarios (id, nombre, apellido1, apellido2, email, contrasenya, fech
 ('4', 'Pepe', 'Gonzalez', 'Sanchez', 'pepe@gmail.es', '123456', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 2);
 
 
+# INSERT INTO `usuarios` (`id`, `nombre`, `apellido1`, `apellido2`, `email`, `contrasenya`, `fecha_creacion`, `fecha_modificacion`, `fecha_eliminacion`, `estado`) VALUES 
+# ('2', 'Jose Antonio', 'Padilla', 'Soler', 'antonio@iescelia.es', '123456', '2021-11-07 18:32:14', '', '', '1');
+
 # CREATE USER IF NOT EXISTS 'user'@'%';
 # SET PASSWORD FOR 'user'@'%' = 'password';
 # GRANT ALL PRIVILEGES ON db.* TO 'user'@'%';

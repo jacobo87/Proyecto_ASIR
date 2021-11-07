@@ -9,6 +9,7 @@
 <link href="img/favicon.png" rel="icon" type="image/png">
 <link href="img/favicon.ico" rel="shortcut icon">
 
+<!-- css para summernote -->
 <link rel="stylesheet" href="../../public/css/lib/summernote/summernote.css"/>
 <link rel="stylesheet" href="../../public/css/separate/pages/editor.min.css">
 
