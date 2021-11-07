@@ -45,35 +45,33 @@ if (isset($_SESSION["id"])) {
                         <h5 class="m-t-lg with-border">Información</h5>
 
                         <div class="row">
-                            <div class="col-lg-6">
-                                <fieldset class="form-group">
-                                    <label class="form-label semibold" for="exampleInput">Seleccione una Categoría</label>
-                                    <select id="" class="form-control">
-                                        <option>Hardware</option>
-                                        <option>Software</option>
-                                        <option>Redes</option>
-                                        <option>Sistema Operativo</option>
-                                        <option>Otros</option>
-                                    </select>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-6">
-                                <fieldset class="form-group">
-                                    <label class="form-label semibold" for="exampleInputEmail1">Título</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Escriba el título">
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset class="form-group">
-                                    <label class="form-label semibold" for="exampleInputPassword1">Descripción</label>
-                                    <div class="summernote-theme-3">
-                                        <textarea id="descripcion" class="summernote" name="name">Añada una descripción de su problema.</textarea>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <button type="button" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
-                            </div>
+                            <!-- Introducimos el formulario en form -->
+                            <form method="post" id="caso_form">
+                                <div class="col-lg-6">
+                                    <fieldset class="form-group">
+                                        <label class="form-label semibold" for="exampleInput">Seleccione una Categoría</label>
+                                        <select id="categoria" class="form-control">
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6">
+                                    <fieldset class="form-group">
+                                        <label class="form-label semibold" for="exampleInputEmail1">Título</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Escriba el título">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset class="form-group">
+                                        <label class="form-label semibold" for="exampleInputPassword1">Descripción</label>
+                                        <div class="summernote-theme-3">
+                                            <textarea id="descripcion" class="summernote" name="name">Añada una descripción de su problema.</textarea>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="button" class="btn btn-rounded btn-inline btn-primary">Guardar</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </header>
@@ -90,8 +88,10 @@ if (isset($_SESSION["id"])) {
         <script>
             $(document).ready(function() {
                 $('.summernote').summernote({
-                    /* Aumentamos el tamaño del cuadro  */
                     height: 200
+                });
+                $.post("../../controller/categoria.php?op=combo", function(data, status) {
+                    $('#categoria').html(data);
                 });
             });
         </script>
