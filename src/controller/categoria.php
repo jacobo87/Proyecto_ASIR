@@ -17,7 +17,7 @@
                 foreach($datos as $row)
                 {
                     // Declaramos otro HTML con las opciones id y nombre
-                    $html.= "<option value='".$row['id'].">".$row['nombre']."</option>";
+                    $html.= "<option value='".$row['id']."'>".$row['nombre']."</option>";
                 }
                 // mostramos el resultado
                 echo $html;

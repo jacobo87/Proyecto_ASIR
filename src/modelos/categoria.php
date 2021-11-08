@@ -14,6 +14,5 @@
             // Devolvemos el valor de la consulta
             return $resultado=$sql->fetchAll();
         }
-
     }
 ?>

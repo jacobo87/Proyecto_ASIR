@@ -10,10 +10,6 @@
             <span>toggle menu</span>
         </button>
 
-        <button class="hamburger hamburger--htla">
-            <span>toggle menu</span>
-        </button>
-
         <div class="site-header-content">
             <div class="site-header-content-in">
                 <div class="site-header-shown">
@@ -28,10 +24,10 @@
                             <a class="dropdown-item" href="../logout/"><span class="font-icon glyphicon glyphicon-log-out"></span>Cerrar sesión</a>
                         </div>
                     </div>
-
-                    <button type="button" class="burger-right">
+                    <!-- Botón de menu logo -->
+                    <!-- <button type="button" class="burger-right">
                         <i class="font-icon-menu-addl"></i>
-                    </button>
+                    </button> -->
                 </div>
                 <!--.site-header-shown-->
 
