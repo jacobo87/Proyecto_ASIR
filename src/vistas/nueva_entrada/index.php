@@ -97,7 +97,8 @@ if (isset($_SESSION["id"])) {
 
             $(document).ready(function() {
                 $('.summernote').summernote({
-                    height: 200
+                    height: 200,
+                    lang: "es-ES"
                 });
                 $.post("../../controller/categoria.php?op=combo", function(data, status) {
                     $('#categoria').html(data);
@@ -117,6 +118,8 @@ if (isset($_SESSION["id"])) {
                     processData: false,
                     success: function(datos) {
                         console.log(datos);
+                        data = JSON.parse(data);
+                        console.log(data[0].caso_id);
                     }
                 });
             }
