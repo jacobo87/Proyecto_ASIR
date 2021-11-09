@@ -52,6 +52,8 @@ Para la puesta en marcha usaremos:
 -   [Visual Studio Code](https://code.visualstudio.com/) para desarrollo de código web con diferentes extensiones especializadas.
 - [Balsamiq](https://balsamiq.com/) para la creación del [wireframe](https://es.wikipedia.org/wiki/Website_wireframe) del sitio.
 - [Summernote](https://summernote.org/)
+- [MorrisJs](https://morrisjs.github.io/morris.js/) biblioteca [JS](https://developer.mozilla.org/es/docs/Web/JavaScript) que genera diagramas.
+- [PHP y MySQL: Creando sitios dinámicos](https://openwebinars.net/academia/portada/php-mysql/)
 
 ## REFERENCIAS
 - [José Juan Sanchez](https://github.com/josejuansanchez/iaw-practica-lamp-docker)
