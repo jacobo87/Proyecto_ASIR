@@ -8,7 +8,7 @@ CREATE TABLE usuarios (
   nombre VARCHAR(150) NOT NULL,
   apellido1 VARCHAR(150) NOT NULL,
   apellido2 VARCHAR(150) NOT NULL,
-  email VARCHAR(150) NOT NULL,
+  email VARCHAR(150) UNIQUE NOT NULL,
   contrasenya VARCHAR(29) NOT NULL,
   fecha_creacion DATETIME NOT NULL,
   fecha_modificacion DATETIME NOT NULL,
@@ -35,28 +35,6 @@ CREATE TABLE caso (
   FOREIGN KEY (categoria_id) REFERENCES categoria(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
-INSERT INTO usuarios (id, nombre, apellido1, apellido2, email, contrasenya, fecha_creacion, fecha_modificacion, fecha_eliminacion, estado) VALUES
-('1', 'Jacobo', 'Azmani', 'Gonzalez', 'jacobo@gmail.es', '123456', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1),
-('2', 'Jose Antonio', 'Padilla', 'Soler', 'padilla@gmail.es', '123456', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1),
-('3', 'Juan', 'García', 'López', 'juan@gmail.es', '123456', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1),
-('4', 'Pepe', 'Gonzalez', 'Sanchez', 'pepe@gmail.es', '123456', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 2);
-
-
-# Insertamos datos en la tabla categoría
-INSERT INTO `categoria` (`id`, `nombre`, `estado`) VALUES 
-(1, 'Hardware', '1'), 
-(2, 'Software', '1'),
-(3, 'Redes', '1'), 
-(4, 'Sistema Operativo', '1'),
-(5, 'Otros', '1');
-
-# Insertamos datos en la tabla caso
-INSERT INTO `caso` (`id`, `usuario_id`, `categoria_id`, `titulo`, `descripcion`, `estado`) VALUES 
-(NULL, '1', '1', 'Placa base rota.', 'PC no arranca...', '1');
-
-# INSERT INTO `usuarios` (`id`, `nombre`, `apellido1`, `apellido2`, `email`, `contrasenya`, `fecha_creacion`, `fecha_modificacion`, `fecha_eliminacion`, `estado`) VALUES 
-# ('2', 'Jose Antonio', 'Padilla', 'Soler', 'antonio@iescelia.es', '123456', '2021-11-07 18:32:14', '', '', '1');
 
 # CREATE USER IF NOT EXISTS 'user'@'%';
 # SET PASSWORD FOR 'user'@'%' = 'password';
