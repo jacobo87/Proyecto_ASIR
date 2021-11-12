@@ -105,25 +105,6 @@ if (isset($_SESSION["id"])) {
                 });
             });
 
-            function guardareditar(e) {
-                // añadimos está función para que no salte varias veces
-                e.preventDefault();
-                // Declaranos la variable formData
-                var formData = new FormData($("caso_form")[0]);
-                $.ajax({
-                    url: "../../controller/caso.php?op=insertar",
-                    type: "POST",
-                    data: formData,
-                    contentType: false,
-                    processData: false,
-                    success: function(datos) {
-                        console.log(datos);
-                        data = JSON.parse(data);
-                        console.log(data[0].caso_id);
-                    }
-                });
-            }
-
             init();
         </script>
     </body>
