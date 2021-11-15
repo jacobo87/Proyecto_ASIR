@@ -19,10 +19,14 @@ $(document).ready(function () {
 function guardareditar(e) {
     // añadimos está función para que no salte varias veces
     e.preventDefault();
+
     // Declaranos la variable formData
-    var formData = new FormData($("caso_form")[0]);
+    var formData = new FormData(document.getElementById("caso_form"));
+    
+    formData.append("op", "insertar");
+
     $.ajax({
-        url: "../../controller/caso.php?op=insertar",
+        url: "../../controller/caso.php",
         type: "POST",
         data: formData,
         contentType: false,

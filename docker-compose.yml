@@ -12,9 +12,10 @@ services:
             - MYSQL_DATABASE=${MYSQL_DATABASE}
             - MYSQL_USER=${MYSQL_USER}
             - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+            - LANG=C.UTF-8
         volumes:
             - mysql_data:/var/lib/mysql
-            - ./sql:/docker-entrypoint-initdb.d
+            - ./db:/docker-entrypoint-initdb.d
         networks:
             - backend-network
         restart: always
@@ -42,6 +43,8 @@ services:
         depends_on: 
             - mysql
         restart: always
+        volumes:
+            - ./src:/var/www/html/
 
 networks:
     frontend-network:
