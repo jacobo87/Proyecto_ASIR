@@ -20,14 +20,47 @@ if (isset($_SESSION["id"])) {
         <!-- Llamamos a nuestra barra de menu -->
         <?php require_once("../mainnav/nav.php"); ?>
 
-        <!-- Contenido del sitio -->
-        <div class="page-content">
-            <div class="container-fluid">
-                Blank page.
-            </div>
-            <!--.container-fluid-->
-        </div>
-        <!-- Contenido del sitio -->
+ <!-- Contenido -->
+ <div class="page-content">
+		<div class="container-fluid">
+
+			<header class="section-header">
+				<div class="tbl">
+					<div class="tbl-row">
+						<div class="tbl-cell">
+							<h3>Consultar Caso</h3>
+							<ol class="breadcrumb breadcrumb-simple">
+								<li><a href="../home/index.php">Inicio</a></li>
+								<li class="active">Consultar Caso</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="box-typical box-typical-padding">
+				<table id="Caso_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+					<thead>
+						<tr>
+							<th style="width: 5%;">Nro.Caso</th>
+							<th style="width: 15%;">Categoria</th>
+							<th class="d-none d-sm-table-cell" style="width: 40%;">Título</th>
+							<th class="d-none d-sm-table-cell" style="width: 5%;">Estado</th>
+							<th class="d-none d-sm-table-cell" style="width: 10%;">Fecha Creación</th>
+							<th class="d-none d-sm-table-cell" style="width: 10%;">Fecha Asignación</th>
+							<th class="d-none d-sm-table-cell" style="width: 10%;">Soporte</th>
+							<th class="text-center" style="width: 5%;"></th>
+						</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
+	<!-- Contenido -->
 
         <!-- Llamamos a nuestro mainjs -->
         <?php require_once("../mainjs/js.php"); ?>

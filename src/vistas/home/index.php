@@ -21,12 +21,50 @@ if (isset($_SESSION["id"])) {
         <?php require_once("../mainnav/nav.php"); ?>
 
         <!-- Contenido del sitio -->
-        <div class="page-content">
-            <div class="container-fluid">
-                Blank page.
-            </div>
-            <!--.container-fluid-->
-        </div>
+        div class="page-content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="row">
+						<div class="col-sm-4">
+	                        <article class="statistic-box green">
+	                            <div>
+	                                <div class="number" id="lbltotal"></div>
+	                                <div class="caption"><div>Total de Casos</div></div>
+	                            </div>
+	                        </article>
+	                    </div>
+						<div class="col-sm-4">
+	                        <article class="statistic-box yellow">
+	                            <div>
+	                                <div class="number" id="lbltotalabierto"></div>
+	                                <div class="caption"><div>Total de Casos Abiertos</div></div>
+	                            </div>
+	                        </article>
+	                    </div>
+						<div class="col-sm-4">
+	                        <article class="statistic-box red">
+	                            <div>
+	                                <div class="number" id="lbltotalcerrado"></div>
+	                                <div class="caption"><div>Total de Casos Cerrados</div></div>
+	                            </div>
+	                        </article>
+	                    </div>
+					</div>
+				</div>
+			</div>
+
+			<section class="card">
+				<header class="card-header">
+					Grafico Estadístico
+				</header>
+				<div class="card-block">
+					<div id="divgrafico" style="height: 250px;"></div>
+				</div>
+			</section>
+			
+		</div>
+	</div>
         <!-- Contenido del sitio -->
 
         <!-- Llamamos a nuestro mainjs -->
