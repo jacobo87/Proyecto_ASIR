@@ -1,16 +1,25 @@
 <?php
-// Iniciamos sesión
+    // Iniciamos sesión
     session_start();
-//Creamos la clase conectar
+
+    //Creamos la clase conectar
     class conectar{
-//Creamos una variable protegida
-        protected $DB_HOST;
-//Creamos la cadena de conexión
+
+        //Creamos una variable protegida
+        protected $pdo;
+
+        // Datos de configuración de la conexión a la base de datos
+        private $host = 'mysql';
+        private $user = 'user';
+        private $passwd = 'password';
+        private $dbname = 'db';
+
+        //Creamos la cadena de conexión
         protected function conexion(){
             try {
                 // Selecionamos la variable portegida y añadimos un TRY_CAST
-                $conectar = $this->DB_HOST = new PDO("mysql:local=localhost;dbname=db", "root", "");
-                return $conectar;
+                $this->pdo = new PDO("mysql:host=$this->host;dbname=$this->dbname", $this->user, $this->passwd);
+                return $this->pdo;
             } catch (Exception $e) {
                 // Si el resultado es NULL, mostramos mensaje de error
                 print "Error en la conexión con la Base de Datos: " . $e->getMessage() . "<br/>";
@@ -19,11 +28,12 @@
         }
         // Añadimos la funcion de set_names para no tener problemas con mayusculas, los caracteres como tildes, ñ, por seguridad
         public function set_names(){
-            return $this->DB_HOST->query("SET NAMES 'utf8'");
+            return $this->pdo->query("SET NAMES 'utf8'");
         }
 
         // Validamos la ruta de nuestro proyecto
         public function ruta(){
-            return "http://localhost/proyectoasir/";
+            //return "http://localhost/proyectoasir/";
+            return "http://localhost/";
         }
     }

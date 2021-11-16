@@ -86,7 +86,7 @@ if (isset($_SESSION["id"])) {
         <!-- Llamamos a nuestro mainjs -->
         <?php require_once("../mainjs/js.php"); ?>
         <!-- Añadimos el script que va a controlar la vista -->
-        <script type="text/javascript" src="home.js"></script>
+        <!--<script type="text/javascript" src="../../vistas/nueva_entrada/entrada.js"></script>-->
         <!-- Añadimos el script que controla summernote -->
         <script>
             function init() {
@@ -105,7 +105,28 @@ if (isset($_SESSION["id"])) {
                 });
             });
 
-            init();
+            function guardareditar(e) {
+                // añadimos está función para que no salte varias veces
+                e.preventDefault();
+
+                // Declaranos la variable formData
+                var formData = new FormData(document.getElementById("caso_form"));
+    
+                formData.append("op", "insertar");
+
+                $.ajax({
+                    url: "../../controller/caso.php?op=insertar",
+                    type: "POST",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (datos) {
+                        console.log(datos);
+                    }
+                });
+            }
+
+            init();            
         </script>
     </body>
 

@@ -1,12 +1,11 @@
 <?php
 // Requerimos el archivo de conexión de la base de datos
 require_once("configuracion/conexion.php");
+
 // Comprobamos si el envio es = a si entra en usuario.php
 if (isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
     require_once("modelos/usuario.php");
     $usuario = new usuario();
-
-
     $usuario->login();
 }
 ?>
