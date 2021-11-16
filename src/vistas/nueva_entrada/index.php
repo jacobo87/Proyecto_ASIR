@@ -121,7 +121,10 @@ if (isset($_SESSION["id"])) {
                     contentType: false,
                     processData: false,
                     success: function (datos) {
-                        console.log(datos);
+                        // Creamos mensaje de envio satisfactorio
+                        $('#titulo').val('');
+                        $('#descripcion').summernote('reset');
+                        swal("¡Enviado!", "Se ha registrado su incidencia", "success");
                     }
                 });
             }
