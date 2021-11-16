@@ -65,7 +65,7 @@ if (isset($_SESSION["id"])) {
         <!-- Llamamos a nuestro mainjs -->
         <?php require_once("../mainjs/js.php"); ?>
         <!-- Añadimos el script que va a controlar la vista -->
-        <script type="text/javascript" src="home.js"></script>
+        <script type="text/javascript" src="consulta.js"></script>
     </body>
 
     </html>

@@ -15,4 +15,14 @@
 
 <link rel="stylesheet" href="../../public/css/lib/font-awesome/font-awesome.min.css">
 <link rel="stylesheet" href="../../public/css/lib/bootstrap/bootstrap.min.css">
+
+<!-- css para sweet-alert -->
+<link rel="stylesheet" href="../../public/css/lib/bootstrap-sweetalert/sweetalert.css">
+<link rel="stylesheet" href="../../public/css/separate/vendor/sweet-alert-animations.min.css">
+
+<!-- css para datatable -->
+<link rel="stylesheet" href="../../public/css/lib/datatables-net/datatables.min.css">
+<link rel="stylesheet" href="../../public/css/separate/vendor/datatables-met.min.css">
+
+
 <link rel="stylesheet" href="../../public/css/main.css">
