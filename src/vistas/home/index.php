@@ -21,7 +21,7 @@ if (isset($_SESSION["id"])) {
         <?php require_once("../mainnav/nav.php"); ?>
 
         <!-- Contenido del sitio -->
-        div class="page-content">
+        <div class="page-content">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-12">
