@@ -36,11 +36,14 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
     <div class="page-center">
         <div class="page-center-in">
             <div class="container-fluid">
+                <!-- Creamos un input tipo hidden para usarlo en el login segun usuarios -->
+                <input type="hidden" id="rol_tipo" name="rol_tipo" value="usuario">
+
                 <form class="sign-box" action="" method="post" id="login_formulario">
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="Imagen de perfil">
                     </div>
-                    <header class="sign-title">Acceso</header>
+                    <header class="sign-title" id="lbltitulo">Acceso Usuario</header>
 
                     <!-- Agregamos mensajes de error -->
                     <?php
@@ -83,6 +86,9 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
                         <div class="float-right reset">
                             <a href="reset-password.html">Resetear contraseña</a>
                         </div>
+                        <div class="float-left reset">
+                            <a href="#" id="btnsoporte">Acceso soporte</a>
+                        </div>
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">
                     <button type="submit" class="btn btn-rounded">Acceder</button>
@@ -117,6 +123,9 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
         });
     </script>
     <script src="js/app.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+
 </body>
 
 </html>
