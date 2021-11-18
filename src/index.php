@@ -3,7 +3,7 @@
 require_once("configuracion/conexion.php");
 
 // Comprobamos si el envio es = a si entra en usuario.php
-if (isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
+if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
     require_once("modelos/usuario.php");
     $usuario = new usuario();
     $usuario->login();
@@ -36,10 +36,11 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
     <div class="page-center">
         <div class="page-center-in">
             <div class="container-fluid">
-                <!-- Creamos un input tipo hidden para usarlo en el login segun usuarios -->
-                <input type="hidden" id="rol_tipo" name="rol_tipo" value="usuario">
-
                 <form class="sign-box" action="" method="post" id="login_formulario">
+
+                    <!-- Creamos un input tipo hidden para usarlo en el login segun usuarios -->
+                    <input type="hidden" id="rol_tipo" name="rol_tipo" value="usuario">
+
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="Imagen de perfil">
                     </div>
@@ -47,8 +48,8 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
 
                     <!-- Agregamos mensajes de error -->
                     <?php
-                    if (isset($_GET['m'])){
-                        switch ($_GET['m']){
+                    if (isset($_GET['m'])) {
+                        switch ($_GET['m']) {
                             case "1";
                     ?>
                                 <div class="alert alert-warning alert-icon alert-close alert-dismissible fade in" role="alert">

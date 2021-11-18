@@ -8,19 +8,21 @@
             parent::set_names();
             // Preguntamos con POST para que recoja los parametros enviados desde login
             if(isset($_POST["enviar"])){
-                // Ponemos los login necesarios, correo y contraseña
+                // Ponemos los login necesarios, correo, contraseña y rol
                 $email = $_POST["email"];
                 $contrasenya = $_POST["contrasenya"];
+                $rol_tipo = $_POST["rol_tipo"];
                 // Creamos mensaje de error si los campos están vacíos
                 if(empty($email) and empty($contrasenya)){
                     // Mandamos de nuevo a index.php con un mensaje 2 indicando que hay un error
                     header("Location:".conectar::ruta()."index.php?m=2");
                 }else{
                     // Si se conecta, llamamos a la sentencia sql
-                    $sql = "SELECT * FROM usuarios WHERE email=? and contrasenya=? and estado=1";
+                    $sql = "SELECT * FROM usuarios WHERE email=? and contrasenya=? and rol_tipo=? and estado=1";
                     $stmt=$conectar->prepare($sql);
                     $stmt->bindValue(1, $email);
                     $stmt->bindValue(2, md5($contrasenya));
+                    $stmt->bindValue(3, $rol_tipo);
                     // ejecutamos lo indicado
                     $stmt->execute();
                     // Lo guardamos en una variable resultado
@@ -32,6 +34,7 @@
                         $_SESSION["nombre"]=$resultado["nombre"];
                         $_SESSION["apellido1"]=$resultado["apellido1"];
                         $_SESSION["apellido2"]=$resultado["apellido2"];
+                        $_SESSION["rol_tipo"]=$resultado["rol_tipo"];
                         // Si es correcto el resultado lo redirigimos a la pagina home
                         header("Location:".conectar::ruta()."vistas/home/index.php");
                     }else{
