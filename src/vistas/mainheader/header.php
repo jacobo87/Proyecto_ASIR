@@ -3,7 +3,7 @@
 
         <a href="#" class="site-logo">
             <img class="hidden-md-down" src="../../public/img/logo3.png" alt="Logo Jacobo">
-            <img class="hidden-lg-up" src="../../public/img/logo4.png" alt="logo Jacobo Alt">
+            <img class="hidden-lg-up" src="../../public/img/logo3.png" alt="Logo Jacobo">
         </a>
 
         <button id="show-hide-sidebar-toggle" class="show-hide-sidebar">

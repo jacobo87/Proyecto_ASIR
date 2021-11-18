@@ -19,9 +19,10 @@ $(document).ready(function(){
                 'pdfHtml5'
                 ],
         "ajax":{
-            url: '../../controller/ticket.php?op=listar',
+            url: '../../controller/caso.php?op=listar_usu',
             type : "post",
-            dataType : "json",						
+            dataType : "json",	
+            data:{ id : 1 },					
             error: function(e){
                 console.log(e.responseText);	
             }

@@ -86,7 +86,7 @@ if (isset($_SESSION["id"])) {
         <!-- Llamamos a nuestro mainjs -->
         <?php require_once("../mainjs/js.php"); ?>
         <!-- Añadimos el script que va a controlar la vista -->
-        <!--<script type="text/javascript" src="../../vistas/nueva_entrada/entrada.js"></script>-->
+        <!--<script type="text/javascript" src="entrada.js"></script>-->
         <!-- Añadimos el script que controla summernote -->
         <script>
             function init() {
