@@ -125,6 +125,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
     </script>
     <script src="js/app.js"></script>
 
+    <!-- Declaramos el Js para nuestro index -->
     <script type="text/javascript" src="index.js"></script>
 
 </body>
