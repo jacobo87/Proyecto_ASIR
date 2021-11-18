@@ -20,7 +20,7 @@
                     $sql = "SELECT * FROM usuarios WHERE email=? and contrasenya=? and estado=1";
                     $stmt=$conectar->prepare($sql);
                     $stmt->bindValue(1, $email);
-                    $stmt->bindValue(2, $contrasenya);
+                    $stmt->bindValue(2, md5($contrasenya));
                     // ejecutamos lo indicado
                     $stmt->execute();
                     // Lo guardamos en una variable resultado
