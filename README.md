@@ -55,6 +55,7 @@ Para la puesta en marcha usaremos:
 - [MorrisJs](https://morrisjs.github.io/morris.js/) biblioteca [JS](https://developer.mozilla.org/es/docs/Web/JavaScript) que genera diagramas.
 - [PHP y MySQL: Creando sitios dinámicos](https://openwebinars.net/academia/portada/php-mysql/)
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extensión de VScode para ver los cambios del código en tiempo real.
+- [function md5()](http://www.md5.cz/) Devuelve el hash como un número hexadecimal de 32 caracteres.
 
 ## REFERENCIAS
 - [José Juan Sanchez](https://github.com/josejuansanchez/iaw-practica-lamp-docker)
