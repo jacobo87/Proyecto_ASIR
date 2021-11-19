@@ -19,7 +19,7 @@ $(document).ready(function(){
                 'pdfHtml5'
                 ],
         "ajax":{
-            url: '../../controller/caso.php?op=listar_usu',
+            url: '../../controller/caso.php?op=listar_caso',
             type : "post",
             dataType : "json",	
             data:{ id : 1 },					

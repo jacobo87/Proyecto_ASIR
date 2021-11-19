@@ -84,12 +84,12 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                         <input type="password" id="contrasenya" name="contrasenya" class="form-control" placeholder="Contraseña" />
                     </div>
                     <div class="form-group">
-                        <div class="float-right reset">
+<!--                         <div class="float-right reset">
                             <a href="reset-password.html">Resetear contraseña</a>
-                        </div>
-                        <div class="float-left reset">
+                        </div> -->
+<!--                         <div class="float-left reset">
                             <a href="#" id="btnsoporte">Acceso soporte</a>
-                        </div>
+                        </div> -->
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">
                     <button type="submit" class="btn btn-rounded">Acceder</button>
