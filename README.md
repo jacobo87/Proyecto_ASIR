@@ -24,7 +24,7 @@ Se emplearán contenedores [Docker](https://www.docker.com/) para levantar servi
 - [Linux](https://es.wikipedia.org/wiki/GNU/Linux), el sistema operativo
 - [Apache](https://httpd.apache.org/), servidor web;
 - [MySQL](https://www.mysql.com/) / [MariaDB](https://mariadb.org/), administrador de bases de datos;
--  	[PHP](https://www.php.net/), lenguaje de programación.
+- [PHP](https://www.php.net/), lenguaje de programación.
 
 La combinación de estas tecnologías se utiliza principalmente para definir la estructura básica del servidor web.
 
@@ -45,20 +45,22 @@ Con Docker-Compose podemos crear diferentes contenedores y al mismo tiempo, en c
 
 Para la puesta en marcha usaremos:
 
--   [Raspberry PI](https://www.raspberrypi.org/) durante la fase de desarrollo.
--   [Repositorio Github](https://github.com/) y [Git](https://git-scm.com/) con herramientas necesarias para levantar los servicios.
--   [Contenedor Docker](https://aws.amazon.com/es/docker/)
--   [Amazon Web Services](https://aws.amazon.com/es/) para el despliegue final del proyecto.
--   [Visual Studio Code](https://code.visualstudio.com/) para desarrollo de código web con diferentes extensiones especializadas.
+- [Raspberry PI](https://www.raspberrypi.org/) durante la fase de desarrollo.
+- [Repositorio Github](https://github.com/) y [Git](https://git-scm.com/) con herramientas necesarias para levantar los servicios.
+- [Contenedor Docker](https://aws.amazon.com/es/docker/)
+- [Amazon Web Services](https://aws.amazon.com/es/) para el despliegue final del proyecto.
+- [Visual Studio Code](https://code.visualstudio.com/) para desarrollo de código web con diferentes extensiones especializadas.
 - [Balsamiq](https://balsamiq.com/) para la creación del [wireframe](https://es.wikipedia.org/wiki/Website_wireframe) del sitio.
 - [Summernote](https://summernote.org/)
 - [MorrisJs](https://morrisjs.github.io/morris.js/) biblioteca [JS](https://developer.mozilla.org/es/docs/Web/JavaScript) que genera diagramas.
-- [PHP y MySQL: Creando sitios dinámicos](https://openwebinars.net/academia/portada/php-mysql/)
+- [PHP y MySQL: Creando sitios dinámicos](https://openwebinars.net/cursos/php-mysql/)
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extensión de VScode para ver los cambios del código en tiempo real.
 - [function md5()](http://www.md5.cz/) Devuelve el hash como un número hexadecimal de 32 caracteres.
 
 ## REFERENCIAS
 - [José Juan Sanchez](https://github.com/josejuansanchez/iaw-practica-lamp-docker)
 - [Jacobo Azmani](https://github.com/jacobo87)
+- [Openwebinars](https://openwebinars.net/)
+- [php.net](https://www.php.net/manual/es/)
 
 [Subir](#top)
