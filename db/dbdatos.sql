@@ -16,7 +16,7 @@ INSERT INTO categoria (id, nombre) VALUES
 (5, 'Otros');
 
 # Insertamos datos en la tabla caso
-INSERT INTO `caso` (`id`, `usuario_id`, `categoria_id`, `titulo`, `descripcion`, `estado`) VALUES 
+INSERT INTO caso (id, usuario_id, categoria_id, titulo, descripcion, estado) VALUES 
 (NULL, '1', '1', 'Placa base rota.', 'PC no arranca...', '1'),
 (NULL, '3', '2', 'No funciona inicio.', 'El botón de inicio de Windows...', '1'),
 (NULL, '3', '3', 'No tengo Wi-Fi.', 'No me puedo conectar...', '1'),
@@ -27,4 +27,8 @@ INSERT INTO `caso` (`id`, `usuario_id`, `categoria_id`, `titulo`, `descripcion`,
 
 # Insertamos datos en la tabla comentarios
 INSERT INTO comentarios (id, usuarios_id. caso_id, comentario, fecha_creacion_comentario) VALUES
-('1', '1', '1', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', '2021-01-01 00:00:00');
+(NULL, '3', '2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', '2021-01-01 00:00:00'),
+(NULL, '4', '2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', '2021-01-01 00:00:00'),
+(NULL, '2', '1', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', '2021-01-01 00:00:00'),
+(NULL, '3', '3', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', '2021-01-01 00:00:00'),
+(NULL, '3', '1', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', '2021-01-01 00:00:00');
