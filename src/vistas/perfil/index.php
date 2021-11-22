@@ -28,7 +28,10 @@ if (isset($_SESSION["id"])) {
 								<img src="../../public/img/photo-220-1.jpg" alt="foto_perfil"/>
 							</div>
                                 </br>
-							<div class="profile-card-name"><span class="lblcontactonomx"> <?php echo $_SESSION["nombre"] ?> <?php echo $_SESSION["apellido1"] ?></span> <?php echo $_SESSION["apellido2"] ?></span></div>
+							<div class="profile-card-name"><span class="lblcontactonomx"> Nombre: <?php echo $_SESSION["nombre"] ?> </span></div>
+                            <div class="profile-card-name">Apellidos: <?php echo $_SESSION["apellido1"] ?></span> <?php echo $_SESSION["apellido2"] ?></span></div>
+                            </br>
+                            <div class="profile-card-name">Su perfil es de tipo: <?php echo $_SESSION["rol_tipo"] ?></span></div>
 						</div><!--.profile-card-->
 					</section><!--.box-typical-->
         <!-- Contenido del sitio -->
