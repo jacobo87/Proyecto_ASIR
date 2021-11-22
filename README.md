@@ -57,7 +57,7 @@ caso_id= FK CASO(id)
 
 
 
-
+### LAMP
 -  [Linux](https://es.wikipedia.org/wiki/GNU/Linux), el sistema operativo
 -  [Apache](https://httpd.apache.org/), servidor web;
 -  [MySQL](https://www.mysql.com/) / [MariaDB](https://mariadb.org/), administrador de bases de datos;
