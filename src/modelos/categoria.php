@@ -7,7 +7,7 @@
             // Enlazamos con nuestro set_names para usar utf8 
             parent::set_names();
             // Creamos la variable de la consulta 
-            $sql="SELECT * FROM categoria WHERE estado=1";
+            $sql="SELECT * FROM categoria";
             $sql=$conectar->prepare($sql);
             // Ejecutamos SQL
             $sql->execute();
