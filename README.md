@@ -1,8 +1,8 @@
 <a name="top"></a>
 # Proyecto Integrado ASIR
-> Jacobo Azmani
-> IES Celia Viñas (Almería) - Curso 2020/2021
-> Ciclo: CFGS Administración de Sistemas Informáticos en Red
+> Jacobo Azmani 
+> IES Celia Viñas (Almería) - Curso 2020/2021 
+> Ciclo: CFGS Administración de Sistemas Informáticos en Red 
 
 ## Índice de contenidos
 *  [PILA LAMP](#item1)
@@ -78,8 +78,8 @@ Con Docker-Compose podemos crear diferentes contenedores y al mismo tiempo, en c
 # Base de Datos
 
 ## Diagrama de la Base de Datos
-**![](https://lh6.googleusercontent.com/Ir_g9-STFlMepe6dw5jNOyESY4yb6McvgSfpUJep_ooobqjcSN6emTvcd86LVvXCdPioWDjtJitQKjOkfeH8zeTOwk6ke1PeT13y2_9Rp0HUTtFj4MryVSB-OkI0TzEh_TxtBQ1f)**
 
+![HELPDESK](https://user-images.githubusercontent.com/58173221/142851931-b79d6ce6-86a5-40cc-8f5e-509bb20f0cfd.png)
 
   
 ## Descripción de tablas y campos
@@ -99,10 +99,13 @@ categoria_id= FK CATEGORIA(id)
 usuario_id = FK USUARIOS(id) 
 
 caso_id= FK CASO(id) 
-  
+
+
 
 <a name="item4"></a>
-#### Herramientas usadas
+
+### Herramientas usadas
+
 Para la puesta en marcha usaremos:
 -  [Raspberry PI](https://www.raspberrypi.org/) durante la fase de desarrollo.
 -  [Repositorio Github](https://github.com/) y [Git](https://git-scm.com/) con herramientas necesarias para levantar los servicios.
