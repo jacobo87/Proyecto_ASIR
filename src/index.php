@@ -123,7 +123,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
             });
         });
 
-        function init() {
+/*         function init() {
         }
 
         $(document).ready(function () {
@@ -142,7 +142,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                 }
         });
 
-        init();
+        init(); */
     </script>
     <script src="public/js/app.js"></script>
 
