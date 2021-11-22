@@ -26,7 +26,7 @@ INSERT INTO caso (id, usuario_id, categoria_id, titulo, descripcion, estado) VAL
 (NULL, '3', '1', 'Placa base rota.', 'PC no arranca...', '1');
 
 # Insertamos datos en la tabla comentarios
-INSERT INTO comentarios (id, usuarios_id. caso_id, comentario, fecha_creacion_comentario) VALUES
+INSERT INTO comentarios (id, usuario_id, caso_id, comentario, fecha_creacion_comentario) VALUES
 (NULL, '3', '2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', '2021-01-01 00:00:00'),
 (NULL, '4', '2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', '2021-01-01 00:00:00'),
 (NULL, '2', '1', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry', '2021-01-01 00:00:00'),
