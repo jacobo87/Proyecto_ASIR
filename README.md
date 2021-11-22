@@ -40,24 +40,7 @@ Se emplearán contenedores [Docker](https://www.docker.com/) para levantar servi
 
 ![](https://lh4.googleusercontent.com/wmCuTDpkpnkjtu8_EtTcK3usdu5NcQyHkphLmApGya_j3ulA8OGTKAnrIrjVrt7gh-nwF23GYXDFE9AwdEIw8OwkuOHz9Uq_y8XpzFctBODDl23cZQsDL0-Cw267y6xovLe8nwnk)
 
-  
-## Descripción de tablas y campos
 
--   USUARIOS (id, nombre ,apellido1, apellido2, email, contrasenya, rol_tipo, fecha_creacion, fecha_modificacion, fecha_eliminacion, estado)  
--   CATEGORÍA (id, nombre)  
--   CASO (id,  usuario_id, categoria_id, título, descripción, estado)
-
-usuario_id = FK USUARIOS(id)
-categoria_id= FK CATEGORIA(id)
--   COMENTARIOS (id, usuarios_id. caso_id, comentario, fecha_creacion_comentario)
-
-usuario_id = FK USUARIOS(id)
-caso_id= FK CASO(id)
-
-
-
-
-### LAMP
 -  [Linux](https://es.wikipedia.org/wiki/GNU/Linux), el sistema operativo
 -  [Apache](https://httpd.apache.org/), servidor web;
 -  [MySQL](https://www.mysql.com/) / [MariaDB](https://mariadb.org/), administrador de bases de datos;
@@ -96,6 +79,24 @@ Con Docker-Compose podemos crear diferentes contenedores y al mismo tiempo, en c
 
 ## Diagrama de la Base de Datos
 **![](https://lh6.googleusercontent.com/Ir_g9-STFlMepe6dw5jNOyESY4yb6McvgSfpUJep_ooobqjcSN6emTvcd86LVvXCdPioWDjtJitQKjOkfeH8zeTOwk6ke1PeT13y2_9Rp0HUTtFj4MryVSB-OkI0TzEh_TxtBQ1f)**
+
+
+  
+## Descripción de tablas y campos
+
+-   USUARIOS (id, nombre ,apellido1, apellido2, email, contrasenya, rol_tipo, fecha_creacion, fecha_modificacion, fecha_eliminacion, estado)  
+
+-   CATEGORÍA (id, nombre)  
+
+-   CASO (id,  usuario_id, categoria_id, título, descripción, estado)
+
+usuario_id = FK USUARIOS(id)
+categoria_id= FK CATEGORIA(id)
+
+-   COMENTARIOS (id, usuarios_id. caso_id, comentario, fecha_creacion_comentario)
+
+usuario_id = FK USUARIOS(id)
+caso_id= FK CASO(id)
   
 
 <a name="item4"></a>
