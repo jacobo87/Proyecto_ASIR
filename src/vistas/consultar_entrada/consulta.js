@@ -9,7 +9,7 @@ $(document).ready(function(){
         "aProcessing": true,
         "aServerSide": true,
         dom: 'Bfrtip',
-        "searching": true,
+        "searching": false,
         lengthChange: false,
         colReorder: true,
         buttons: [		          
@@ -18,11 +18,12 @@ $(document).ready(function(){
                 'csvHtml5',
                 'pdfHtml5'
                 ],
+        //
         "ajax":{
             url: '../../controller/caso.php?op=listar_caso',
             type : "post",
             dataType : "json",	
-            data:{ id : 1 },					
+            data:{ usuario_id : 1 },					
             error: function(e){
                 console.log(e.responseText);	
             }

@@ -1,4 +1,4 @@
-/* function init() {
+function init() {
 }
 
 $(document).ready(function () {
@@ -17,4 +17,4 @@ $(document).on("click", "#btnsoporte", function () {
     }
 });
 
-init(); */
+init();

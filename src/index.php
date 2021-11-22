@@ -100,11 +100,11 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
     <!--.page-center-->
 
 
-    <script src="public/js/lib/jquery/jquery.min.js"></script>
-    <script src="public/js/lib/tether/tether.min.js"></script>
-    <script src="public/js/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="public/js/plugins.js"></script>
-    <script type="text/javascript" src="public/js/lib/match-height/jquery.matchHeight.min.js"></script>
+    <script src="../public/js/lib/jquery/jquery.min.js"></script>
+    <script src="../public/js/lib/tether/tether.min.js"></script>
+    <script src="../public/js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../public/js/plugins.js"></script>
+    <script type="text/javascript" src="../public/js/lib/match-height/jquery.matchHeight.min.js"></script>
     <script>
         $(function() {
             $('.page-center').matchHeight({
