@@ -25,7 +25,7 @@ if (isset($_SESSION["id"])) {
         <section class="box-typical">
 						<div class="profile-card">
 							<div class="profile-card-photo">
-								<img src="../../public/img/photo-220-1.jpg" alt="foto_perfil"/>
+								<img src="../../public/img/photo-92-1.jpg" alt="foto_perfil"/>
 							</div>
                                 </br>
 							<div class="profile-card-name"><span class="lblcontactonomx"> Nombre: <?php echo $_SESSION["nombre"] ?> </span></div>
