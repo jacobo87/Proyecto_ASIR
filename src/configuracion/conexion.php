@@ -34,6 +34,6 @@
         // Validamos la ruta de nuestro proyecto
         public function ruta(){
             //return "http://localhost/proyectoasir/";
-            return "http://localhost/";
+            return "http://192.168.1.38/";
         }
     }

@@ -87,9 +87,9 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
 <!--                         <div class="float-right reset">
                             <a href="reset-password.html">Resetear contraseña</a>
                         </div> -->
-<!--                         <div class="float-left reset">
+                        <div class="float-left reset">
                             <a href="#" id="btnsoporte">Acceso soporte</a>
-                        </div> -->
+                        </div>
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">
                     <button type="submit" class="btn btn-rounded">Acceder</button>
@@ -122,8 +122,29 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                 }, 100);
             });
         });
+
+        function init() {
+        }
+
+        $(document).ready(function () {
+
+        });
+
+        $(document).on("click", "#btnsoporte", function () {
+            if ($('#rol_tipo').val() == 'usuario') {
+                $('#lbltitulo').html("Acceso Usuario");
+                $('#btnsoporte').html("Acceso Soporte");
+                $('#rol_tipo').val('administrador');
+        } else {
+                $('#lbltitulo').html("Acceso Soporte");
+                $('#btnsoporte').html("Acceso Usuario");
+                $('#rol_tipo').val('usuario');
+                }
+        });
+
+        init();
     </script>
-    <script src="js/app.js"></script>
+    <script src="public/js/app.js"></script>
 
     <!-- Declaramos el Js para nuestro index -->
     <script type="text/javascript" src="index.js"></script>
