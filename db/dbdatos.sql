@@ -1,10 +1,10 @@
 USE db;
 
-INSERT INTO usuarios (id, nombre, apellido1, apellido2, email, contrasenya, fecha_creacion, fecha_modificacion, fecha_eliminacion, estado, rol_tipo) VALUES
-('1', 'Jacobo', 'Azmani', 'Gonzalez', 'jacobo@iescelia.es', 'e10adc3949ba59abbe56e057f20f883e', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1, 'administrador'),
-('2', 'Jose Antonio', 'Padilla', 'Soler', 'padilla@iescelia.es', 'e10adc3949ba59abbe56e057f20f883e', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1, 'administrador'),
-('3', 'Juan', 'García', 'López', 'juan@iescelia.es', 'e10adc3949ba59abbe56e057f20f883e', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1, 'usuario'),
-('4', 'Pepe', 'Gonzalez', 'Sanchez', 'pepe@iescelia.es', 'e10adc3949ba59abbe56e057f20f883e', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1, 'usuario');
+INSERT INTO usuarios (id, nombre, apellido1, apellido2, email, contrasenya, rol_tipo, fecha_creacion, fecha_modificacion, fecha_eliminacion, estado) VALUES
+('1', 'Jacobo', 'Azmani', 'Gonzalez', 'jacobo@iescelia.es', 'e10adc3949ba59abbe56e057f20f883e', 'administrador', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1),
+('2', 'Jose Antonio', 'Padilla', 'Soler', 'padilla@iescelia.es', 'e10adc3949ba59abbe56e057f20f883e','administrador', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1),
+('3', 'Juan', 'García', 'López', 'juan@iescelia.es', 'e10adc3949ba59abbe56e057f20f883e', 'usuario', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1),
+('4', 'Pepe', 'Gonzalez', 'Sanchez', 'pepe@iescelia.es', 'e10adc3949ba59abbe56e057f20f883e', 'usuario', '2021-11-06 19:46:22', '2021-01-01 00:00:00', '2021-01-01 00:00:00', 1);
 
 
 # Insertamos datos en la tabla categoría

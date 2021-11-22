@@ -10,11 +10,11 @@ CREATE TABLE usuarios (
   apellido2 VARCHAR(150) NOT NULL,
   email VARCHAR(150) UNIQUE NOT NULL,
   contrasenya VARCHAR(64) NOT NULL,
+  rol_tipo enum('administrador','usuario') NOT NULL,
   fecha_creacion DATETIME NOT NULL,
   fecha_modificacion DATETIME NOT NULL,
   fecha_eliminacion DATETIME NOT NULL,
-  estado INTEGER(11) NOT NULL,
-  rol_tipo enum('administrador','usuario') NOT NULL
+  estado INTEGER(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 # CATEGORÍA (id, nombre, estado)
