@@ -49,7 +49,6 @@ if (isset($_SESSION["id"])) {
 						</tr>
 					</thead>
 					<tbody>
-
 					</tbody>
 				</table>
 			</div>
