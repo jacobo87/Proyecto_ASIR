@@ -102,6 +102,7 @@ caso_id= FK CASO(id)
   
 
 <a name="item4"></a>
+
 #### Herramientas usadas
 Para la puesta en marcha usaremos:
 -  [Raspberry PI](https://www.raspberrypi.org/) durante la fase de desarrollo.
