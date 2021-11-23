@@ -118,6 +118,7 @@ Para la puesta en marcha usaremos:
 -  [PHP y MySQL: Creando sitios dinámicos](https://openwebinars.net/cursos/php-mysql/)
 -  [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extensión de VScode para ver los cambios del código en tiempo real.
 -  [function md5()](http://www.md5.cz/) Devuelve el hash como un número hexadecimal de 32 caracteres.
+-  [Bootstrapmade](https://bootstrapmade.com/bootstrap-admin-templates/) template admin.
 
   
 
