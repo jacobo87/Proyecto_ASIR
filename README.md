@@ -1,10 +1,5 @@
 <a name="top"></a>
-[![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/jacobo87/Proyecto_ASIR/)
-[![GitHub branches](https://badgen.net/github/branches/Naereen/Strapdown.js)](https://github.com/jacobo87/Proyecto_ASIR/)
-[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/jacobo87/Proyecto_ASIR/)
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/jacobo87/Proyecto_ASIR/issues/)
-[![GitHub issues-closed](https://img.shields.io/github/issues-closed/Naereen/StrapDown.js.svg)](https://GitHub.com/jacobo87/Proyecto_ASIR/issues?q=is%3Aissue+is%3Aclosed)
-[![GitLab last commit](https://badgen.net/gitlab/last-commit/NickBusey/HomelabOS/)](https://gitlab.com/jacobo87/Proyecto_ASIR/-/commits)
+![GitHub followers](https://img.shields.io/github/followers/jacobo87?logo=Github&style=social)
 
 
 
