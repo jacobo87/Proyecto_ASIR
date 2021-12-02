@@ -1,9 +1,4 @@
 <a name="top"></a>
-![GitHub](https://img.shields.io/github/license/RushabhM2/feedbackr?style=plastic)
-![GitHub contributors](https://img.shields.io/github/contributors/RushabhM2/feedbackr?logo=github&style=plastic)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/RushabhM2/feedbackr?logo=github&style=plastic)
-![GitHub top language](https://img.shields.io/github/languages/top/RushabhM2/feedbackr)
-
 # Proyecto Integrado ASIR
 > Jacobo Azmani 
 > IES Celia Viñas (Almería) - Curso 2020/2021 
