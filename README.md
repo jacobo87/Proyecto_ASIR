@@ -1,8 +1,4 @@
 <a name="top"></a>
-![GitHub followers](https://img.shields.io/github/followers/jacobo87?logo=Github&style=social)
-
-
-
 # Proyecto Integrado ASIR
 > Jacobo Azmani  
 > IES Celia Viñas (Almería) - Curso 2020/2021  
@@ -133,3 +129,8 @@ Para la puesta en marcha usaremos:
 -  [php.net](https://www.php.net/manual/es/)
 
 [Subir](#top)
+
+
+![GitHub followers](https://img.shields.io/github/followers/jacobo87?logo=Github&style=social)
+[![Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://unlicense.org/)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
