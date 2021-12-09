@@ -4,8 +4,8 @@
 
 
 # Proyecto Integrado ASIR
-> Jacobo Azmani 
-> IES Celia Viñas (Almería) - Curso 2020/2021 
+> Jacobo Azmani  
+> IES Celia Viñas (Almería) - Curso 2020/2021  
 > Ciclo: CFGS Administración de Sistemas Informáticos en Red 
 
 ## Índice de contenidos
