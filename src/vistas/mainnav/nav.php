@@ -20,7 +20,7 @@
             </a>
             </li>
             <li class="magenta with-sub">
-                <a href="..\consultar_entrada\">
+                <a href="..\consultar_entrada\index2.php">
                 <span>
                     <span class="glyphicon glyphicon-list-alt"></span>
                     <span class="lbl">Consultar Caso</span>

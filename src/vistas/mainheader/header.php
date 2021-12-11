@@ -1,7 +1,7 @@
 <header class="site-header">
     <div class="container-fluid">
 
-        <a href="#" class="site-logo">
+        <a href="../home/index.php" class="site-logo">
             <img class="hidden-md-down" src="../../public/img/logo3.png" alt="Logo Jacobo">
             <img class="hidden-lg-up" src="../../public/img/logo3.png" alt="Logo Jacobo">
         </a>
