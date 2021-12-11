@@ -45,11 +45,11 @@
                 </div>
             </div>
 
-            </div>
-            <!--.help-dropdown-->
-            <!--.site-header-collapsed-in-->
         </div>
-        <!--.site-header-collapsed-->
+        <!--.help-dropdown-->
+        <!--.site-header-collapsed-in-->
+    </div>
+    <!--.site-header-collapsed-->
     </div>
     <!--site-header-content-in-->
     </div>

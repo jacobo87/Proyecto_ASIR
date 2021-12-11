@@ -1,7 +1,7 @@
 <a name="top"></a>
 # Proyecto Integrado ASIR
-> Jacobo Azmani 
-> IES Celia Viñas (Almería) - Curso 2020/2021 
+> Jacobo Azmani  
+> IES Celia Viñas (Almería) - Curso 2020/2021  
 > Ciclo: CFGS Administración de Sistemas Informáticos en Red 
 
 ## Índice de contenidos
@@ -118,6 +118,7 @@ Para la puesta en marcha usaremos:
 -  [PHP y MySQL: Creando sitios dinámicos](https://openwebinars.net/cursos/php-mysql/)
 -  [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extensión de VScode para ver los cambios del código en tiempo real.
 -  [function md5()](http://www.md5.cz/) Devuelve el hash como un número hexadecimal de 32 caracteres.
+-  [Bootstrapmade](https://bootstrapmade.com/bootstrap-admin-templates/) template admin.
 
   
 
@@ -128,3 +129,8 @@ Para la puesta en marcha usaremos:
 -  [php.net](https://www.php.net/manual/es/)
 
 [Subir](#top)
+
+
+![GitHub followers](https://img.shields.io/github/followers/jacobo87?logo=Github&style=social)
+[![Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://unlicense.org/)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
