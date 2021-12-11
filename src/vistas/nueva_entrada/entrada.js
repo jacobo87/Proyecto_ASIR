@@ -11,7 +11,7 @@ $(document).ready(function () {
         height: 200
     });
     /* Hacemos una llamada al combo de categoria */
-    $.post("../../controller/categoria.php?op=combo", function(data, status){
+    $.post("../../controller/categoria.php?op=combo", function (data, status) {
         $('#categoria').html(data);
     });
 });
@@ -22,7 +22,7 @@ function guardareditar(e) {
 
     // Declaranos la variable formData
     var formData = new FormData(document.getElementById("caso_form"));
-    
+
     formData.append("op", "insertar");
 
     $.ajax({

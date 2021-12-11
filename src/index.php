@@ -84,7 +84,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                         <input type="password" id="contrasenya" name="contrasenya" class="form-control" placeholder="Contraseña" />
                     </div>
                     <div class="form-group">
-<!--                         <div class="float-right reset">
+                        <!--                         <div class="float-right reset">
                             <a href="reset-password.html">Resetear contraseña</a>
                         </div> -->
                         <div class="float-left reset">
@@ -123,26 +123,26 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
             });
         });
 
-/*         function init() {
-        }
-
-        $(document).ready(function () {
-
-        });
-
-        $(document).on("click", "#btnsoporte", function () {
-            if ($('#rol_tipo').val() == 'usuario') {
-                $('#lbltitulo').html("Acceso Usuario");
-                $('#btnsoporte').html("Acceso Soporte");
-                $('#rol_tipo').val('administrador');
-        } else {
-                $('#lbltitulo').html("Acceso Soporte");
-                $('#btnsoporte').html("Acceso Usuario");
-                $('#rol_tipo').val('usuario');
+        /*         function init() {
                 }
-        });
 
-        init(); */
+                $(document).ready(function () {
+
+                });
+
+                $(document).on("click", "#btnsoporte", function () {
+                    if ($('#rol_tipo').val() == 'usuario') {
+                        $('#lbltitulo').html("Acceso Usuario");
+                        $('#btnsoporte').html("Acceso Soporte");
+                        $('#rol_tipo').val('administrador');
+                } else {
+                        $('#lbltitulo').html("Acceso Soporte");
+                        $('#btnsoporte').html("Acceso Usuario");
+                        $('#rol_tipo').val('usuario');
+                        }
+                });
+
+                init(); */
     </script>
     <script src="public/js/app.js"></script>
 

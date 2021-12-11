@@ -111,7 +111,7 @@ if (isset($_SESSION["id"])) {
 
                 // Declaranos la variable formData
                 var formData = new FormData(document.getElementById("caso_form"));
-    
+
                 formData.append("op", "insertar");
 
                 $.ajax({
@@ -120,7 +120,7 @@ if (isset($_SESSION["id"])) {
                     data: formData,
                     contentType: false,
                     processData: false,
-                    success: function (datos) {
+                    success: function(datos) {
                         // Creamos mensaje de envio satisfactorio
                         $('#titulo').val('');
                         $('#descripcion').summernote('reset');
@@ -129,7 +129,7 @@ if (isset($_SESSION["id"])) {
                 });
             }
 
-            init();            
+            init();
         </script>
     </body>
 

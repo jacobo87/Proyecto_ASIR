@@ -6,4 +6,3 @@
     // Redirigimos de nuevo a nuestro login del sitio
     header("Location:" . conectar::ruta() . "index.php");
     exit();
-?>
