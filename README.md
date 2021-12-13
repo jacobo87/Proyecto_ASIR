@@ -8,7 +8,8 @@
 *  [PILA LAMP](#item1)
 *  [Docker](#item2)
 *  [Docker-Compose](#item3)
-*  [Herramientas](#item4)
+*  [Directorios](#item4)
+*  [Herramientas](#item5)
 
 # Proyecto
 El proyecto que quiero presentar se enfoca en una **Web de soporte Helpdesk**. Mi objetivo es aplicar los conocimientos adquiridos a lo largo del curso implantando las diferentes infraestructuras para levantar los servicios necesarios para una web de soporte técnico . 
@@ -100,9 +101,68 @@ usuario_id = FK USUARIOS(id)
 
 caso_id= FK CASO(id) 
 
-
-
 <a name="item4"></a>
+
+### Directorios
+
+```javascript
+App web Helpdesk
+├── README.md
+├── docker-compose.yml
+├── .env
+├── apache
+│   └── dockerfile
+├── db
+│   ├── db.sql
+│   └── dbdatos.sql
+├── documentos
+│   ├── DATABASE_HELPDESK.pdf
+│   ├── HELPDESK.png
+│   └── Sitio_Helpdesk_Jacobo.pdf
+└── src
+    ├── configuración
+    │   └── index.php
+    ├── controller
+    │   ├── caso.php
+    │   └── categoria.php
+    ├── modelos
+    │   ├── caso.php
+    │   ├── usuario.php
+    │   └── categoria.php
+    ├── public
+    │   ├── css
+    │   ├── fonts
+    │   ├── img
+    │   └── js
+    ├── vistas
+    │   ├── consulta_entrada
+    │   │ 	├── index.php
+    │   │	└── consulta.js
+    │   ├── home
+    │   │ 	├── index.php
+    │   │	└── home.js
+    │   ├── logout
+    │   │	└── logout.php
+    │   ├── mainhead
+    │   │	└── head.php
+    │   ├── mainheader
+    │   │	└── header.php
+    │   ├── mainjs
+    │   │	└── js.php
+    │   ├── mainnav
+    │   │	└── nav.php
+    │   ├── nueva_entrada
+    │   │ 	├── index.php
+    │   │	└── entrada.js
+    │   └── perfil
+    │    	├── index.php
+    │   	└── perfil.js
+    ├── index.js
+    └── index.php
+
+```
+
+<a name="item5"></a>
 
 ### Herramientas usadas
 
