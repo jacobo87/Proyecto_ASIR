@@ -22,7 +22,7 @@
 
 <!-- css para datatable -->
 <link rel="stylesheet" href="../../public/css/lib/datatables-net/datatables.min.css">
-<link rel="stylesheet" href="../../public/css/separate/vendor/datatables-met.min.css">
+<link rel="stylesheet" href="../../public/css/separate/vendor/datatables-net.min.css">
 
 
 <link rel="stylesheet" href="../../public/css/main.css">

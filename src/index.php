@@ -38,9 +38,6 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
             <div class="container-fluid">
                 <form class="sign-box" action="" method="post" id="login_formulario">
 
-                    <!-- Creamos un input tipo hidden para usarlo en el login segun usuarios -->
-                    <input type="hidden" id="rol_tipo" name="rol_tipo" value="usuario">
-
                     <div class="sign-avatar">
                         <img src="public/img/avatar-sign.png" alt="Imagen de perfil">
                     </div>

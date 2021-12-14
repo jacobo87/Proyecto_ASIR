@@ -38,6 +38,7 @@ class conectar
     public function ruta()
     {
         //return "http://localhost/proyectoasir/";
-        return "http://192.168.1.128/";
+        //return "http://192.168.1.128/";
+        return "http://localhost/";
     }
 }
