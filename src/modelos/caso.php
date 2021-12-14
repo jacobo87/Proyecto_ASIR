@@ -29,22 +29,22 @@ class caso extends conectar
         parent::set_names();
         // Creamos la variable de la consulta 
         $sql = "SELECT 
-            caso.id,
-            caso.usuario_id,
-            caso.categoria_id,
-            caso.titulo,
-            caso.descripcion,
-            usuarios.nombre,
-            usuarios.apellido1,
-            usuarios.apellido2,
-            categoria.nombre
+            caso.id AS id_caso,
+            caso.usuario_id AS id_usuario,
+            caso.categoria_id AS id_categoria,
+            caso.titulo AS titulo_caso,
+            caso.descripcion AS descripcion,
+            usuarios.nombre AS nombre_usuario,
+            usuarios.apellido1 AS apellido1_usuario,
+            usuarios.apellido2 AS apellido2_usuario,
+            categoria.nombre AS nombre_categoria
             FROM
             caso
             INNER JOIN categoria ON caso.categoria_id = categoria.id
             INNER JOIN usuarios ON caso.usuario_id = usuarios.id
             WHERE
             caso.estado=1
-            AND usuario.id=?;
+            AND usuarios.id=?;
             ";
         $sql = $conectar->prepare($sql);
         // Ponemos los parametros anteriores

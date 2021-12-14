@@ -20,6 +20,11 @@ if (isset($_SESSION["id"])) {
 		<!-- Llamamos a nuestra barra de menu -->
 		<?php require_once("../mainnav/nav.php"); ?>
 
+		<form id="caso_form">
+			<!-- Introduciomos el id del usuario -->
+			<input type="hidden" id="usuario_id" name="usuario_id" value="<?php echo $_SESSION["id"] ?>">
+		</form>
+
 		<!-- Contenido -->
 		<div class="page-content">
 			<div class="container-fluid">
@@ -42,10 +47,14 @@ if (isset($_SESSION["id"])) {
 					<table id="Caso_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
 						<thead>
 							<tr>
-								<th style="width: 5%;">Nro.Caso</th>
-								<th style="width: 15%;">Categoría</th>
-								<th class="d-none d-sm-table-cell" style="width: 40%;">Título</th>
-								<th class="text-center" style="width: 5%;"></th>
+								<th style="width: 10%;">ID Caso</th>
+								<th style="width: 10%;">Categoría</th>
+								<th style="width: 25%;">Título</th>
+								<th style="width: 25%;">Descripción</th>
+								<th style="width: 10%;">Nombre Usuario</th>
+								<th style="width: 10%;">Apellido1</th>
+								<th style="width: 10%;">Apellido2</th>
+								<!--<th class="text-center" style="width: 5%;"></th>-->
 							</tr>
 						</thead>
 						<tbody>

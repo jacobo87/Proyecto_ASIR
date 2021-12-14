@@ -20,7 +20,8 @@ if ($_SESSION["rol_tipo"] == 'usuario') {
                 </a>
             </li>
             <li class="magenta with-sub">
-                <a href="..\consultar_entrada\index2.php">
+                <!--<a href="..\consultar_entrada\index2.php">-->
+                <a href="..\consultar_entrada\index.php">
                     <span>
                         <span class="glyphicon glyphicon-list-alt"></span>
                         <span class="lbl">Consultar Caso</span>

@@ -7,19 +7,26 @@ require_once("../modelos/caso.php");
 $caso = new caso();
 
 switch ($_POST["op"]) {
-        // Creamos un case 
+    // Creamos un case 
     case "insertar":
         $caso->insert_caso($_POST["usuario_id"], $_POST["categoria_id"], $_POST["titulo"], $_POST["descripcion"]);
         break;
 
+    // Obtenemos el listado de casos de un usuario
     case "listar_caso":
         $datos = $caso->listar_caso($_POST["usuario_id"]);
         $data = array();
         foreach ($datos as $row) {
             $sub_array = array();
-            $sub_array[] = $row["caso_id"];
-            $sub_array[] = $row["categoria_id"];
-            $sub_array[] = $row["caso.titulo"];
+            $sub_array[] = $row["id_caso"];
+            //$sub_array[] = $row["id_categoria"];
+            $sub_array[] = $row["nombre_categoria"];
+            $sub_array[] = $row["titulo_caso"];
+            $sub_array[] = $row["descripcion"];
+            $sub_array[] = $row["nombre_usuario"];
+            $sub_array[] = $row["apellido1_usuario"];
+            $sub_array[] = $row["apellido2_usuario"];
+
             $data[] = $sub_array;
         }
 

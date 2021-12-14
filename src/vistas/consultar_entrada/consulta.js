@@ -20,10 +20,18 @@ $(document).ready(function () {
         ],
         //
         "ajax": {
-            url: '../../controller/caso.php?op=listar_caso',
+            url: '../../controller/caso.php',
+            /*
             type: "post",
             dataType: "json",
-            data: { usuario_id: 1 },
+            data: { op:"listar_caso", usuario_id: 1 },
+            */
+            type: "post",
+            data: function(d) {
+               d.op = "listar_caso";
+               d.usuario_id = document.getElementById("usuario_id").value
+            },
+            
             error: function (e) {
                 console.log(e.responseText);
             }
