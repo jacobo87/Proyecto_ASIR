@@ -9,7 +9,8 @@
 *  [Docker](#item2)
 *  [Docker-Compose](#item3)
 *  [Directorios](#item4)
-*  [Herramientas](#item5)
+*  [Instancia de AWS](#item5)
+*  [Herramientas](#item6)
 
 # Proyecto
 El proyecto que quiero presentar se enfoca en una **Web de soporte Helpdesk**. Mi objetivo es aplicar los conocimientos adquiridos a lo largo del curso implantando las diferentes infraestructuras para levantar los servicios necesarios para una web de soporte técnico . 
@@ -166,8 +167,12 @@ App web Helpdesk
 
 ### Instancia en AWS
 
-```bash aws ec2 run-instances --image-id ami-xxxxxxxx --count 1 --instance-type t2.micro --key-name MyKeyPair --security-group-ids sg-903004f8 --subnet-id subnet-6e7f829e
+```bash
+ aws ec2 run-instances --image-id ami-xxxxxxxx --count 1 --instance-type t2.micro --key-name MyKeyPair --security-group-ids sg-903004f8 --subnet-id subnet-6e7f829e
 ```
+
+Ejemplo
+```bash
 <a name="item6"></a>
 
 ### Herramientas usadas
