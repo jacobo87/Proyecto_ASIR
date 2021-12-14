@@ -7,6 +7,10 @@ if (isset($_SESSION["id"])) {
 	<html>
 	<!-- Llamamos a nuestro Head -->
 	<?php require_once("../mainhead/head.php"); ?>
+	<!-- Añadimos el CSS para la muestra de gráficos ya que solo lo vamos a usar para está ventana -->
+	<!-- https://morrisjs.github.io/morris.js/ -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
 	<title>Jacobo Azmani - Home</title>
 	</head>
 
@@ -60,15 +64,6 @@ if (isset($_SESSION["id"])) {
 					</div>
 				</div>
 
-				<section class="card">
-					<header class="card-header">
-						Grafico Estadístico
-					</header>
-					<div class="card-block">
-						<div id="divgrafico" style="height: 250px;"></div>
-					</div>
-				</section>
-
 			</div>
 		</div>
 		<!-- Contenido del sitio -->
@@ -76,6 +71,9 @@ if (isset($_SESSION["id"])) {
 		<!-- Llamamos a nuestro mainjs -->
 		<?php require_once("../mainjs/js.php"); ?>
 		<!-- Añadimos el script que va a controlar la vista -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
 		<script type="text/javascript" src="home.js"></script>
 	</body>
 

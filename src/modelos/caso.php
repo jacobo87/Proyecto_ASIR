@@ -54,4 +54,34 @@ class caso extends conectar
         // Devolvemos el valor de la consulta
         return $resultado = $sql->fetchAll();
     }
+
+    public function caso_total()
+    {
+        $conectar = parent::conexion();
+        parent::set_names();
+        $sql = "SELECT COUNT(*) as TOTAL FROM caso";
+        $sql = $conectar->prepare($sql);
+        $sql->execute();
+        return $resultado = $sql->fetchAll();
+    }
+
+    public function caso_totalabierto()
+    {
+        $conectar = parent::conexion();
+        parent::set_names();
+        $sql = "SELECT COUNT(*) as TOTAL FROM caso where estado=1";
+        $sql = $conectar->prepare($sql);
+        $sql->execute();
+        return $resultado = $sql->fetchAll();
+    }
+
+    public function caso_totalcerrado()
+    {
+        $conectar = parent::conexion();
+        parent::set_names();
+        $sql = "SELECT COUNT(*) as TOTAL FROM caso where estado=2";
+        $sql = $conectar->prepare($sql);
+        $sql->execute();
+        return $resultado = $sql->fetchAll();
+    }
 }

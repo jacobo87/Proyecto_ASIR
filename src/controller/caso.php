@@ -7,12 +7,12 @@ require_once("../modelos/caso.php");
 $caso = new caso();
 
 switch ($_POST["op"]) {
-    // Creamos un case 
+        // Creamos un case 
     case "insertar":
         $caso->insert_caso($_POST["usuario_id"], $_POST["categoria_id"], $_POST["titulo"], $_POST["descripcion"]);
         break;
 
-    // Obtenemos el listado de casos de un usuario
+        // Obtenemos el listado de casos de un usuario
     case "listar_caso":
         $datos = $caso->listar_caso($_POST["usuario_id"]);
         $data = array();
@@ -37,5 +37,36 @@ switch ($_POST["op"]) {
             "aaData" => $data
         );
         echo json_encode($results);
+        break;
+
+        // Obtenemos el listado total de casos
+    case "caso_total";
+        $datos = $usuario->usuarios_total($_POST["usuarios_id"]);
+        if (is_array($datos) == true and count($datos) > 0) {
+            foreach ($datos as $row) {
+                $output["TOTAL"] = $row["TOTAL"];
+            }
+            echo json_encode($output);
+        }
+        break;
+
+        case "caso_totalabierto";
+        $datos = $usuario->usuarios_totalabierto($_POST["usuarios_id"]);
+        if (is_array($datos) == true and count($datos) > 0) {
+            foreach ($datos as $row) {
+                $output["TOTAL"] = $row["TOTAL"];
+            }
+            echo json_encode($output);
+        }
+        break;
+
+        case "caso_totalcerrado";
+        $datos = $usuario->usuarios_totalcerrado($_POST["usuarios_id"]);
+        if (is_array($datos) == true and count($datos) > 0) {
+            foreach ($datos as $row) {
+                $output["TOTAL"] = $row["TOTAL"];
+            }
+            echo json_encode($output);
+        }
         break;
 }
