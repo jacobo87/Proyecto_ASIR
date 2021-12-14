@@ -163,7 +163,7 @@ App web Helpdesk
 
 ```
 
-<a name="item5></a>
+<a name="item5"></a>
 
 ### Instancia en AWS
 
@@ -173,6 +173,22 @@ App web Helpdesk
 
 Ejemplo
 ```bash
+aws ec2 run-instances --image-id ami-04505e74c0741db8d --count 1 --instance-type t2.micro --key-name vockey --security-group-ids sg-0afb1eaee5e4b761e
+```
+         
+Donde: 
+- ``ami-04505e74c0741db8d`` (64 bits x86), instancia **Ubuntu Server 20.04 LTS (HVM), SSD Volume Type**.
+- ``--key-name vockey``, la clave de seguridad usadad para **AWS Learner Lab**.
+- ``sg-0afb1eaee5e4b761e``, grupo de seguridad por defecto con las **reglas de entrada para todos los puertos, tráfico y protocolos**. 
+
+ERROR
+```bash
+ddd_v1_w_h4aw_615692@runweb45275:~$ aws ec2 run-instances --image-id ami-04505e74c0741db8d --count 1 --instance-type t2.micro --key-name vockey --security-group-ids sg-0afb1eaee5e4b761e
+
+An error occurred (UnauthorizedOperation) when calling the RunInstances operation: You are not authorized to perform this operation. Encoded authorization failure message: PNDOV1oGibO7Rp9Xrnj4T2SVrqi0oHwSQfN3GCWYvRBA8wPcjE50V6jjvK6mrAx-IWIwRRTElJ6lxlwR6-CSlqLqx3kOqNPxrfRlwD7KtKng_qIKBswXJ7ib3oqj6JiM6Qh3QvwaavE1ZtIoDzUc-P9JvTdjqcAc75jlr-GF0GTGVY94Ya37JmitXVHSEZB-P65zTGDEbBPnerjuJ51aRo5bvuU-msQlPouSqIHtW3KCqQpeqV8llDSZFz1PUVCDJMPCWgrEPcr_GpbEhyesUQKXlUoff4gCu_i5blOPRFAdbjzNYJ_vjaQTP5uuG63DSblXsZjGkGPROK8f04kLCwPkDFOeE4zLXjYyOO74Y00RoBOMb4UvXGzZAyGlcPCqfRpHmDiFrcAVWpJCeRzY34hv_JiqXJYQ00YHzgf38fCjFyDJu7p-escbULuHlAIRbCrLjQHQk8XxUvhJ-zIS4e_9Q5QjGUVV3fPqgl-E5_h0y0dgvdOkBgksFBW87IP8s21e7KT6Ik7UInYvmg9PIq8Ov59AMhI9idFTEAEg2hDYDYh282TdUkmodjVecbkqZqhN3QYAg2dIoMGiWrr_x6d7Rn5A5mo9-BFhqD8Bljli2jnujrCRYzChtR1dBGWbR6uPxEjc8a1wlfQpxP7lRPzSYHXkdYFzRjP2X4SzzQC2mDtSSuWd7udNuWav7lI0gOca-BkSOwKI6fmoRKwmT3chEFHeKxNFonF7HgJ40XFk_Hb8SKEgELzLOwBgy8gPujHID2ciHg
+ddd_v1_w_h4aw_615692@runweb45275:~$ 
+```
+         
 <a name="item6"></a>
 
 ### Herramientas usadas
