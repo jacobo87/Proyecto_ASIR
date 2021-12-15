@@ -36,7 +36,7 @@ if (isset($_SESSION["id"])) {
 									<div>
 										<div class="number" id="lbltotal"></div>
 										<div class="caption">
-											<div>Total de Casos</div>
+											<div class="caption">Total de Casos</div>
 											</br>
 											<div class="number" id="lbltotal">
 												<p>
@@ -56,7 +56,7 @@ if (isset($_SESSION["id"])) {
 									<div>
 										<div class="number" id="lbltotalabierto"></div>
 										<div class="caption">
-											<div>Total de Casos Abiertos</div>
+											<div class="caption">Total de Casos Abiertos</div>
 											<div class="number" id="lbltotalabierto">
 												<p>
 													<?php
@@ -75,7 +75,7 @@ if (isset($_SESSION["id"])) {
 									<div>
 										<div class="number" id="lbltotalcerrado"></div>
 										<div class="caption">
-											<div>Total de Casos Cerrados</div>
+											<div class="caption">Total de Casos Cerrados</div>
 											<div class="number" id="lbltotalcerrado">
 												<p>
 													<?php
