@@ -41,7 +41,7 @@ if (isset($_SESSION["id"])) {
 												<?php 
 												$caso = new caso();
 												$total = $caso->numero_total_casos();
-												var_dump($total["TOTAL"]); 
+												var_dump($total); 
 												?>
 											</div>
 										</div>
