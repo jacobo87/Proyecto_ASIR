@@ -52,7 +52,11 @@ if (isset($_SESSION["id"])) {
 										<div class="number" id="lbltotalabierto"></div>
 										<div class="caption">
 											<div>Total de Casos Abiertos</div>
-											<div><?php ?></div>
+											<div>
+												<?php $caso = new caso();
+												$total = $caso->numero_total_casos_abiertos();
+												var_dump($total); ?>
+											</div>
 										</div>
 									</div>
 								</article>
@@ -63,7 +67,11 @@ if (isset($_SESSION["id"])) {
 										<div class="number" id="lbltotalcerrado"></div>
 										<div class="caption">
 											<div>Total de Casos Cerrados</div>
-											<div><?php ?></div>
+											<div>
+												<?php $caso = new caso();
+												$total = $caso->numero_total_casos_cerrados();
+												var_dump($total); ?>
+											</div>
 										</div>
 									</div>
 								</article>
