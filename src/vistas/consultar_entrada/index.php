@@ -23,6 +23,7 @@ if (isset($_SESSION["id"])) {
 		<form id="caso_form">
 			<!-- Introduciomos el id del usuario -->
 			<input type="hidden" id="usuario_id" name="usuario_id" value="<?php echo $_SESSION["id"] ?>">
+			<input type="hidden" id="rol_tipo" name="rol_tipo" value="<?php echo $_SESSION["rol_tipo"] ?>">
 		</form>
 
 		<!-- Contenido -->

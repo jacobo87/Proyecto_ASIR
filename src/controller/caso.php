@@ -14,7 +14,13 @@ switch ($_POST["op"]) {
 
         // Obtenemos el listado de casos de un usuario
     case "listar_caso":
-        $datos = $caso->listar_caso($_POST["usuario_id"]);
+        if ($_POST["rol_tipo"]=="administrador"){
+            $datos = $caso->listar_todos_casos();
+        }
+        else{
+            $datos = $caso->listar_caso($_POST["usuario_id"]);
+        }
+        
         $data = array();
         foreach ($datos as $row) {
             $sub_array = array();

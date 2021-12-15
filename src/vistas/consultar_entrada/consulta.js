@@ -4,7 +4,7 @@ function init() {
 
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     tabla = $('#Caso_data').dataTable({
         "aProcessing": true,
         "aServerSide": true,
@@ -21,18 +21,14 @@ $(document).ready(function () {
         //
         "ajax": {
             url: '../../controller/caso.php',
-            /*
-            type: "post",
-            dataType: "json",
-            data: { op:"listar_caso", usuario_id: 1 },
-            */
             type: "post",
             data: function(d) {
-               d.op = "listar_caso";
-               d.usuario_id = document.getElementById("usuario_id").value
+                d.op = "listar_caso";
+                d.usuario_id = document.getElementById("usuario_id").value
+                d.rol_tipo = document.getElementById("rol_tipo").value
             },
-            
-            error: function (e) {
+
+            error: function(e) {
                 console.log(e.responseText);
             }
         },
