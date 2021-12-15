@@ -37,8 +37,9 @@ class conectar
     // Validamos la ruta de nuestro proyecto
     public function ruta()
     {
+        return "/";
         //return "http://localhost/proyectoasir/";
-        return "http://192.168.1.128/";
+        //return "http://192.168.1.128/";
         //return "http://localhost/";
     }
 }

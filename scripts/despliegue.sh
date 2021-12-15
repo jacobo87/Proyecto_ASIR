@@ -12,7 +12,7 @@ apt install docker-compose -y
 
 
 usermod -aG docker $USER
-new grp docker
+newgrp docker
 
 #
 systemctl enable docker 
