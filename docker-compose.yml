@@ -51,7 +51,6 @@ services:
             - 443:443
         links:
             - apache
-        restart: always
         environment:
             DOMAINS: 'practicahttps.ml -> http://apache:80'
         # STAGE: 'production' # Don't use production until staging works
