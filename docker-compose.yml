@@ -44,7 +44,7 @@ services:
         volumes:
             - ./src:/var/www/html/
 
-      https-portal:
+    https-portal:
         image: steveltn/https-portal:1
         ports:
             - 80:80
