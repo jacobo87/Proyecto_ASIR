@@ -179,7 +179,7 @@ aws ec2 run-instances --image-id ami-0472eef47f816e45d --count 1 --instance-type
 Donde: 
 - ``ami-0472eef47f816e45d`` (64 bits x86), instancia **Ubuntu Server 20.04 LTS (HVM), SSD Volume Type**.
 - ``--key-name vockey``, la clave de seguridad usadad para **AWS Learner Lab**.
-- ``sg-proyecto-sg``, grupo de especifico para el proyecto, con las **reglas de entrada, para todos los puertos, ``:80``,``:80`` tráfico y protocolos**. 
+- ``sg-proyecto-sg``, grupo de especifico para el proyecto, con las **reglas de entrada, para todos los puertos, ``:22``, ``:80``,``:443``, ``:8080``. 
 
 ERROR
 ![Captura de pantalla 2021-12-14 a las 22 53 21](https://user-images.githubusercontent.com/58173221/146085557-08bd18af-8765-4d5c-85bc-a580e5bdacce.png)
