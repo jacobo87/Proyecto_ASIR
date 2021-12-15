@@ -173,7 +173,7 @@ App web Helpdesk
 
 Ejemplo
 ```bash
-aws ec2 run-instances --image-id ami-04505e74c0741db8d --count 1 --instance-type t2.micro --key-name vockey --security-group-ids sg-0afb1eaee5e4b761e
+aws ec2 run-instances --image-id ami-0472eef47f816e45d --count 1 --instance-type t2.micro --key-name vockey --security-group-ids sg-0afb1eaee5e4b761e
 ```
          
 Donde: 
