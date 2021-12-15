@@ -52,9 +52,9 @@ services:
         links:
             - apache
         environment:
-            STAGE: local
+            #STAGE: local
             DOMAINS: 'pijacobo.ddns.net -> http://apache:80'
-        # STAGE: 'production' # Don't use production until staging works
+            STAGE: 'production' # Don't use production until staging works
         # FORCE_RENEW: 'true'
         networks:
             - frontend-network
