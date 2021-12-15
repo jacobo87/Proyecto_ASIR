@@ -1,6 +1,7 @@
 <?php
 // Añadimos una variable de inicio de sesión, si existe nos muestra la web
 require_once("../../configuracion/conexion.php");
+require_once("../../modelos/caso.php");
 if (isset($_SESSION["id"])) {
 ?>
 	<!DOCTYPE html>
@@ -35,8 +36,12 @@ if (isset($_SESSION["id"])) {
 									<div>
 										<div class="number" id="lbltotal"></div>
 										<div class="caption">
-											<div>Total de Casos</div>
-											<div><?php ?></div>
+											<div>Total de Casos Ahora</div>
+											<div>
+												<?php $caso = new caso();
+												$total = $caso->numero_total_casos();
+												echo $total ?>
+											</div>
 										</div>
 									</div>
 								</article>
@@ -47,6 +52,7 @@ if (isset($_SESSION["id"])) {
 										<div class="number" id="lbltotalabierto"></div>
 										<div class="caption">
 											<div>Total de Casos Abiertos</div>
+											<div><?php ?></div>
 										</div>
 									</div>
 								</article>
@@ -57,6 +63,7 @@ if (isset($_SESSION["id"])) {
 										<div class="number" id="lbltotalcerrado"></div>
 										<div class="caption">
 											<div>Total de Casos Cerrados</div>
+											<div><?php ?></div>
 										</div>
 									</div>
 								</article>
