@@ -51,7 +51,8 @@ services:
             - 443:443
         restart: always
         environment:
-            DOMAINS: 'practicahttps.ml -> http://apache:80'
+            DOMAINS: 'https://apache -> http://apache:80'
+            #DOMAINS: 'practicahttps.ml -> http://apache:80'
         # STAGE: 'production' # Don't use production until staging works
         # FORCE_RENEW: 'true'
         networks:
