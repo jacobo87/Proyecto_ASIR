@@ -85,7 +85,7 @@ class caso extends conectar
         return $resultado = $sql->fetchAll();
     }
 
-    public function caso_total()
+    public function numero_total_casos()
     {
         $conectar = parent::conexion();
         parent::set_names();
@@ -95,7 +95,7 @@ class caso extends conectar
         return $resultado = $sql->fetchAll();
     }
 
-    public function caso_totalabierto()
+    public function numero_total_casos_abiertos()
     {
         $conectar = parent::conexion();
         parent::set_names();
@@ -105,7 +105,7 @@ class caso extends conectar
         return $resultado = $sql->fetchAll();
     }
 
-    public function caso_totalcerrado()
+    public function numero_total_casos_cerrados()
     {
         $conectar = parent::conexion();
         parent::set_names();

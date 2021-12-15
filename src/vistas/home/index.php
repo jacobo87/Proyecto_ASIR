@@ -36,6 +36,7 @@ if (isset($_SESSION["id"])) {
 										<div class="number" id="lbltotal"></div>
 										<div class="caption">
 											<div>Total de Casos</div>
+											<div><?php ?></div>
 										</div>
 									</div>
 								</article>

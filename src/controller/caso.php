@@ -14,13 +14,12 @@ switch ($_POST["op"]) {
 
         // Obtenemos el listado de casos de un usuario
     case "listar_caso":
-        if ($_POST["rol_tipo"]=="administrador"){
+        if ($_POST["rol_tipo"] == "administrador") {
             $datos = $caso->listar_todos_casos();
-        }
-        else{
+        } else {
             $datos = $caso->listar_caso($_POST["usuario_id"]);
         }
-        
+
         $data = array();
         foreach ($datos as $row) {
             $sub_array = array();
@@ -46,7 +45,7 @@ switch ($_POST["op"]) {
         break;
 
         // Obtenemos el listado total de casos
-    case "caso_total";
+    case "numero_total_casos";
         $datos = $usuario->usuarios_total($_POST["usuarios_id"]);
         if (is_array($datos) == true and count($datos) > 0) {
             foreach ($datos as $row) {
@@ -56,7 +55,7 @@ switch ($_POST["op"]) {
         }
         break;
 
-        case "caso_totalabierto";
+    case "numero_total_casos_abiertos";
         $datos = $usuario->usuarios_totalabierto($_POST["usuarios_id"]);
         if (is_array($datos) == true and count($datos) > 0) {
             foreach ($datos as $row) {
@@ -66,7 +65,7 @@ switch ($_POST["op"]) {
         }
         break;
 
-        case "caso_totalcerrado";
+    case "numero_total_casos_cerrados";
         $datos = $usuario->usuarios_totalcerrado($_POST["usuarios_id"]);
         if (is_array($datos) == true and count($datos) > 0) {
             foreach ($datos as $row) {
