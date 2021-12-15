@@ -53,7 +53,7 @@ services:
             - apache
         environment:
             STAGE: local
-            #DOMAINS: 'practicahttps.ml -> http://apache:80'
+            DOMAINS: 'practicahttps.ml -> http://apache:80'
         # STAGE: 'production' # Don't use production until staging works
         # FORCE_RENEW: 'true'
         networks:
