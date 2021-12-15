@@ -10,11 +10,14 @@ apt update
 apt install docker -y
 apt install docker-compose -y
 
+
+usermod -aG docker $USER
+new grp docker
+
 #
 systemctl enable docker 
 systemctl start docker
 
-usermod -aG docker $USER
 
 git clone https://github.com/jacobo87/Proyecto_ASIR
 
