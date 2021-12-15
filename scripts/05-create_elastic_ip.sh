@@ -18,5 +18,5 @@ INSTANCE_ID=$(aws ec2 describe-instances \
 # Creamos una IP elástica
 ELASTIC_IP=$(aws ec2 allocate-address --query PublicIp --output text)
 
-# Asociamos la IP elástica a la instancia del balanceador
+# Asociamos la IP elástica a la instancia 
 aws ec2 associate-address --instance-id $INSTANCE_ID --public-ip $ELASTIC_IP

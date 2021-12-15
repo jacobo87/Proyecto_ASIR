@@ -15,6 +15,8 @@ SECURITY_GROUP=proyecto-sg
 
 INSTANCE_NAME_PROYECTO=proyecto_pi
 
+BOOT_SCRIPT=despliegue.sh
+
 # Creamos una intancia EC2 para el balanceador de carga
 aws ec2 run-instances \
     --image-id $AMI_ID \
@@ -22,4 +24,5 @@ aws ec2 run-instances \
     --instance-type $INSTANCE_TYPE \
     --key-name $KEY_NAME \
     --security-groups $SECURITY_GROUP \
+    --user-data file://$BOOT_SCRIPT \
     --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME_PROYECTO}]"
