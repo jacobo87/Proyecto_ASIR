@@ -36,16 +36,17 @@ if (isset($_SESSION["id"])) {
 									<div>
 										<div class="number" id="lbltotal"></div>
 										<div class="caption">
-										<div>
-											<p>
-												<?php 
-												$caso = new caso();
-												$total = $caso->numero_total_casos();
-												echo $total["0"]["TOTAL"]; 
-												?>
-											</p>
-											</div>
 											<div>Total de Casos</div>
+											</br>
+											<div>
+												<p>
+													<?php
+													$caso = new caso();
+													$total = $caso->numero_total_casos();
+													echo $total["0"]["TOTAL"];
+													?>
+												</p>
+											</div>
 										</div>
 									</div>
 								</article>
@@ -58,11 +59,11 @@ if (isset($_SESSION["id"])) {
 											<div>Total de Casos Abiertos</div>
 											<div>
 												<p>
-												<?php 
-												$caso = new caso();
-												$total = $caso->numero_total_casos_abiertos();
-												echo $total["0"]["TOTAL"]; 
-												?>
+													<?php
+													$caso = new caso();
+													$total = $caso->numero_total_casos_abiertos();
+													echo $total["0"]["TOTAL"];
+													?>
 												</p>
 											</div>
 										</div>
@@ -77,11 +78,11 @@ if (isset($_SESSION["id"])) {
 											<div>Total de Casos Cerrados</div>
 											<div>
 												<p>
-												<?php
-												$caso = new caso();
-												$total = $caso->numero_total_casos_cerrados();
-												echo $total["0"]["TOTAL"]; 
-												?>
+													<?php
+													$caso = new caso();
+													$total = $caso->numero_total_casos_cerrados();
+													echo $total["0"]["TOTAL"];
+													?>
 												</p>
 											</div>
 										</div>
