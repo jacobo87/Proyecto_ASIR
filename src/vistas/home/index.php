@@ -35,13 +35,14 @@ if (isset($_SESSION["id"])) {
 								<article class="statistic-box green">
 									<div>
 										<div class="number" id="lbltotal"></div>
-										<div class="caption">Total de Casos</div>
+										<div class="caption">
+											<div>Total de Casos</div>
 											<div class="number" id="lbltotal">
-													<?php
-													$caso = new caso();
-													$total = $caso->numero_total_casos();
-													echo $total["0"]["TOTAL"];
-													?>
+												<?php
+												$caso = new caso();
+												$total = $caso->numero_total_casos();
+												echo $total["0"]["TOTAL"];
+												?>
 											</div>
 										</div>
 									</div>
@@ -51,13 +52,14 @@ if (isset($_SESSION["id"])) {
 								<article class="statistic-box yellow">
 									<div>
 										<div class="number" id="lbltotalabierto"></div>
-										<div class="caption">Total de Casos Abiertos</div>
+										<div class="caption">
+											<div>Total de Casos Abiertos</div>
 											<div class="number" id="lbltotalabierto">
-													<?php
-													$caso = new caso();
-													$total = $caso->numero_total_casos_abiertos();
-													echo $total["0"]["TOTAL"];
-													?>
+												<?php
+												$caso = new caso();
+												$total = $caso->numero_total_casos_abiertos();
+												echo $total["0"]["TOTAL"];
+												?>
 											</div>
 										</div>
 									</div>
@@ -67,13 +69,14 @@ if (isset($_SESSION["id"])) {
 								<article class="statistic-box red">
 									<div>
 										<div class="number" id="lbltotalcerrado"></div>
-										<div class="caption">Total de Casos Cerrados</div>
+										<div class="caption">
+											<div>Total de Casos Cerrados</div>
 											<div class="number" id="lbltotalcerrado">
-													<?php
-													$caso = new caso();
-													$total = $caso->numero_total_casos_cerrados();
-													echo $total["0"]["TOTAL"];
-													?>
+												<?php
+												$caso = new caso();
+												$total = $caso->numero_total_casos_cerrados();
+												echo $total["0"]["TOTAL"];
+												?>
 											</div>
 										</div>
 									</div>
