@@ -38,11 +38,13 @@ if (isset($_SESSION["id"])) {
 										<div class="caption">
 											<div>Total de Casos Ahora</div>
 											<div>
+											<p>
 												<?php 
 												$caso = new caso();
 												$total = $caso->numero_total_casos();
-												var_dump($total); 
+												echo $total["0"]["TOTAL"]; 
 												?>
+											</p>
 											</div>
 										</div>
 									</div>
@@ -55,11 +57,13 @@ if (isset($_SESSION["id"])) {
 										<div class="caption">
 											<div>Total de Casos Abiertos</div>
 											<div>
+												<p>
 												<?php 
 												$caso = new caso();
 												$total = $caso->numero_total_casos_abiertos();
 												echo $total["0"]["TOTAL"]; 
 												?>
+												</p>
 											</div>
 										</div>
 									</div>
@@ -72,11 +76,13 @@ if (isset($_SESSION["id"])) {
 										<div class="caption">
 											<div>Total de Casos Cerrados</div>
 											<div>
+												<p>
 												<?php
 												$caso = new caso();
 												$total = $caso->numero_total_casos_cerrados();
-												echo $total["TOTAL"];
+												echo $total["0"]["TOTAL"]; 
 												?>
+												</p>
 											</div>
 										</div>
 									</div>
