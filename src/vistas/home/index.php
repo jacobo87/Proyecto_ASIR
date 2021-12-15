@@ -54,7 +54,6 @@ if (isset($_SESSION["id"])) {
 							<div class="col-sm-4">
 								<article class="statistic-box yellow">
 									<div>
-										<div class="number" id="lbltotalabierto"></div>
 										<div class="caption">
 											<div>
 												<p>Total de Casos Abiertos</p>
