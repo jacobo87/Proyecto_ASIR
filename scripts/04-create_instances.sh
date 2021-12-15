@@ -15,7 +15,7 @@ SECURITY_GROUP=proyecto-sg
 
 INSTANCE_NAME_PROYECTO=proyecto_pi
 
-BOOT_SCRIPT=despliegue.sh
+BOOT_SCRIPT=install_app.sh
 
 # Creamos una intancia EC2 para el balanceador de carga
 aws ec2 run-instances \
