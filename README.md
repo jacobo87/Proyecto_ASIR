@@ -241,6 +241,7 @@ COMENTARIOS (id, usuarios_id. caso_id, comentario, fecha_creacion_comentario)
 > caso_id= FK CASO(id) 
 
 ### Modelo vista controlador (MVC) en PHP
+![image](https://user-images.githubusercontent.com/58173221/146309391-7c8edad0-ecb3-4d12-abfb-f650ad280cf7.png)
 
 #### Definiciones
 
@@ -339,12 +340,19 @@ Donde:
 
 En primera instancia el usuario debe hacer login como cliente.
 
+![image](https://user-images.githubusercontent.com/58173221/146309470-e07f48a8-c69c-46fa-b832-e298c1866a7b.png)
+
 Una vez logueado, el usuario cliente puede crear nuevos casos o revisar las que ya tenga abiertas. En este ejemplo, el usuario cliente abre un nuevo caso.
 
-Tras elegir la naturaleza de su caso y redactar las instrucciones que sean precisas, deberá
-enviar el caso.
+![image](https://user-images.githubusercontent.com/58173221/146309485-83fe8219-c54b-4242-8ab9-16ec2e46ded2.png)
+
+Tras elegir la naturaleza de su caso y redactar las instrucciones que sean precisas, deberá enviar el caso.
+
+![image](https://user-images.githubusercontent.com/58173221/146309515-43c8b519-4850-4920-a200-9a9f4cfbba79.png)
 
 Por su parte, cualquier usuario administrador puede visualizar todas las consultas que se encuentran actualmente abiertas y pendientes de gestionar.
+![image](https://user-images.githubusercontent.com/58173221/146309537-1dd3cb6f-97f1-4bfa-999b-e9f418c558f0.png)
+![image](https://user-images.githubusercontent.com/58173221/146309547-35bf049a-33cc-4ef8-83cd-e7a7f69e6626.png)
 
 
 <a name="item10"></a>
@@ -439,6 +447,5 @@ https://dev.mysql.com/doc/refman/8.0/en/
 
 [Subir](#top)
 
-![GitHub followers](https://img.shields.io/github/followers/jacobo87?logo=Github&style=social)
 [![Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://unlicense.org/)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
