@@ -231,13 +231,13 @@ USUARIOS ( id, nombre ,apellido1, apellido2, email,contrasenya, rol_tipo, fecha_
 CATEGORÍA ( id, nombre)
 CASO ( id, usuario_id, categoria_id, título, descripción, estado)
 ```
-> usuario_id = FK USUARIOS(id) 
+> usuario_id = FK USUARIOS(id)  
 > categoria_id= FK CATEGORIA(id)  
 
 ```
 COMENTARIOS (id, usuarios_id. caso_id, comentario, fecha_creacion_comentario)
 ```
-> usuario_id = FK USUARIOS(id) 
+> usuario_id = FK USUARIOS(id)  
 > caso_id= FK CASO(id) 
 
 ### Modelo vista controlador (MVC) en PHP
