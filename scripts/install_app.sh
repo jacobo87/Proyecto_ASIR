@@ -1,9 +1,10 @@
 #!bin/bash
 set -x
 
-# Desisntalamos 
+# Desisntalamos los paquetes SQL que trae nuestra AMI por defecto
 apt purge -y mssql* msodbc*
 
+# Actualizamos los repositorios
 apt update 
 
 # Instalamos Docker y Docker-compose
