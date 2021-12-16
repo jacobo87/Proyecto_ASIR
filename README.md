@@ -181,7 +181,7 @@ En esta práctica se emplearán contenedores Docker para levantar servicios como
 
 ##### Docker-Compose
 
-Es una herramienta que permite simplificar el uso de Docker. A partir de archivos ``YAML es
+Es una herramienta que permite simplificar el uso de Docker. A partir de archivos ``YAML`` es
 más sencillo crear contenedores, conectarlos, habilitar puertos, volúmenes.
 
 Con Docker-Compose podemos crear diferentes contenedores y al mismo tiempo, en cada
