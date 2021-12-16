@@ -24,6 +24,19 @@ INSERT INTO caso (id, usuario_id, categoria_id, titulo, descripcion, estado) VAL
 (NULL, '4', '4', 'SFC /SCANNOW.', 'Pantalla azul...', '1'),
 (NULL, '4', '1', 'USB no lo reconoce.', 'Conector roto...', '1'),
 (NULL, '3', '1', 'Placa base rota.', 'PC no arranca...', '2');
+(NULL, '1', '1', 'Placa base rota.', 'PC no arranca...', '1'),
+(NULL, '3', '2', 'No funciona inicio.', 'El botón de inicio de Windows...', '1'),
+(NULL, '3', '3', 'No tengo Wi-Fi.', 'No me puedo conectar...', '1'),
+(NULL, '4', '2', 'Explorador de archivos.', 'Roto el buscador...', '1'),
+(NULL, '4', '4', 'SFC /SCANNOW.', 'Pantalla azul...', '1'),
+(NULL, '4', '1', 'USB no lo reconoce.', 'Conector roto...', '1'),
+(NULL, '3', '1', 'Placa base rota.', 'PC no arranca...', '2');(NULL, '1', '1', 'Placa base rota.', 'PC no arranca...', '1'),
+(NULL, '3', '2', 'No funciona inicio.', 'El botón de inicio de Windows...', '1'),
+(NULL, '3', '3', 'No tengo Wi-Fi.', 'No me puedo conectar...', '1'),
+(NULL, '4', '2', 'Explorador de archivos.', 'Roto el buscador...', '1'),
+(NULL, '4', '4', 'SFC /SCANNOW.', 'Pantalla azul...', '1'),
+(NULL, '4', '1', 'USB no lo reconoce.', 'Conector roto...', '1'),
+(NULL, '3', '1', 'Placa base rota.', 'PC no arranca...', '2');
 
 # Insertamos datos en la tabla comentarios
 INSERT INTO comentarios (id, usuario_id, caso_id, comentario, fecha_creacion_comentario) VALUES
