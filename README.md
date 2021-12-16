@@ -152,13 +152,13 @@ de "etiquetas", rodeadas por corchetes angulares ``(<,>)``. HTML también puede 
 script (por ejemplo JavaScript), el cual puede afectar el comportamiento de
 navegadores Web y otros procesadores de HTML.
 
-Por convención, los archivos de formato HTML usan la extensión .htm o .html.
+Por convención, los archivos de formato HTML usan la extensión ``.htm`` o ``.html``.
 
 #### CSS
 
 Las hojas de estilo en cascada ( **Cascading Style Sheets**),CSS es un lenguaje artificial
 usado para definir la presentación de un documento estructurado escrito en HTML o
-XML (y por extensión en XHTML). El WWWC ( **World Wide Web Consortium**) es el
+XML (y por extensión en ``XHTML``). El WWWC ( **World Wide Web Consortium**) es el
 encargado de formular la especificación de las hojas de estilo que servirán de
 estándar para los agentes de usuario o navegadores.
 
@@ -181,7 +181,7 @@ En esta práctica se emplearán contenedores Docker para levantar servicios como
 
 ##### Docker-Compose
 
-Es una herramienta que permite simplificar el uso de Docker. A partir de archivos YAML es
+Es una herramienta que permite simplificar el uso de Docker. A partir de archivos ``YAML es
 más sencillo crear contenedores, conectarlos, habilitar puertos, volúmenes.
 
 Con Docker-Compose podemos crear diferentes contenedores y al mismo tiempo, en cada
@@ -332,7 +332,7 @@ aws ec2 run-instances --image-id ami-0472eef47f816e45d --count 1 --instance-type
 Donde: 
 - ``ami-0472eef47f816e45d`` (64 bits x86), instancia **Ubuntu Server 20.04 LTS (HVM), SSD Volume Type**.
 - ``--key-name vockey``, la clave de seguridad usadad para **AWS Learner Lab**.
-- ``sg-proyecto-sg``, grupo de especifico para el proyecto, con las **reglas de entrada, para todos los puertos, ``:22``, ``:80``,``:443``, ``:8080``. 
+- ``sg-proyecto-sg``, grupo de especifico para el proyecto, con las **reglas de entrada, para todos los puertos**, ``:22``, ``:80``,``:443``, ``:8080``. 
 
 <a name="item9"></a>
 
